@@ -1,0 +1,7 @@
+# 微信公众号去广告
+
+[MITM]
+hostname = mp.weixin.qq.com
+
+[Script]
+http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js, requires-body=true, timeout=10, tag=微信公众号去广告
