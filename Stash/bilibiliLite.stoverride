@@ -14,42 +14,42 @@ http:
       type: response
       require-body: true
       timeout: 10
-      - match: ^https?:\/\/api\.bilibili\.com\/pgc\/page\/bangumi
+    - match: ^https?:\/\/api\.bilibili\.com\/pgc\/page\/bangumi
       name: BiliBili_追番去广告
       type: response
       require-body: true
       timeout: 10
-      - match: ^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom
+    - match: ^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom
       name: BiliBili_直播去广告
       type: response
       require-body: true
       timeout: 10
-      - match: ^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/dynamic_(history|new)\?
+    - match: ^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/dynamic_(history|new)\?
       name: BiliBili_动态去广告
       type: response
       require-body: true
       timeout: 10
-      - match: ^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?
+    - match: ^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?
       name: BiliBili_1080P
       type: response
       require-body: true
       timeout: 10
-      - match: ^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab
+    - match: ^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab
       name: BiliBili_标签页处理
       type: response
       require-body: true
       timeout: 10
-      - match: ^https://app\.bilibili\.com/x/v2/account/mine\?access_key
+    - match: ^https://app\.bilibili\.com/x/v2/account/mine\?access_key
       name: BiliBili_我的页面处理
       type: response
       require-body: true
       timeout: 10
-      - match: ;^https:\/\/app\.bilibili\.com\/x\/(v2\/(splash\/(list|show)|feed\/index\?)|resource\/show\/tab\/v2)
+    - match: ;^https:\/\/app\.bilibili\.com\/x\/(v2\/(splash\/(list|show)|feed\/index\?)|resource\/show\/tab\/v2)
       name: bilijson
       type: response
       require-body: true
       timeout: 10
-      - match: ^https:\/\/app\.bilibili\.com\/bilibili\.app\.(view\.v1\.View\/View|dynamic\.v2\.Dynamic\/DynAll)$
+    - match: ^https:\/\/app\.bilibili\.com\/bilibili\.app\.(view\.v1\.View\/View|dynamic\.v2\.Dynamic\/DynAll)$
       name: biliproto
       type: response
       require-body: true
