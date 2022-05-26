@@ -1,5 +1,5 @@
 name: bilibili去广告
-desc: 去应用内广告、简化标签页、解锁画质、简化我的页面（后面两个脚本可能不生效，搬运水平有限还请原谅）
+desc: 去应用内广告、简化标签页、解锁画质、简化我的页面（搬自@墨鱼手记）
 http:
   mitm:
     - 'app.biliintl.com'
@@ -44,16 +44,6 @@ http:
       type: response
       require-body: true
       timeout: 10
-    - match: ;^https:\/\/app\.bilibili\.com\/x\/(v2\/(splash\/(list|show)|feed\/index\?)|resource\/show\/tab\/v2)
-      name: bilijson
-      type: response
-      require-body: true
-      timeout: 10
-    - match: ^https:\/\/app\.bilibili\.com\/bilibili\.app\.(view\.v1\.View\/View|dynamic\.v2\.Dynamic\/DynAll)$
-      name: biliproto
-      type: response
-      require-body: true
-      timeout: 10
 script-providers:
   BiliBili_推荐去广告:
     url: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_diy.js
@@ -75,10 +65,4 @@ script-providers:
     interval: 86400
   BiliBili_我的页面处理:
     url: https://raw.githubusercontent.com/iEwha/Profiles/master/Script/bilibili_mine.js
-    interval: 86400
-  bilijson:
-    url: https://raw.githubusercontent.com/iEwha/Profiles/master/Script/bilibili-json.js
-    interval: 86400
-  biliproto:
-    url: https://raw.githubusercontent.com/iEwha/Profiles/master/Script/bilibili-proto.js
     interval: 86400
