@@ -14,10 +14,6 @@ http:
       # 可能的一些推广(beta)
     - ^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\? - reject
     # 去除搜索中的大家都在搜
-    - ^https?:\/\/api\.vc\.bilibili\.com\/search_svr\/v\d\/Search\/recommend_words - reject
-    # 去除动态中的话题
-    - ^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr - reject
-    # 去除动态中的最常访问
     - ^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/mix_uplist - reject
     # 可能的一些推广(beta)
     - ^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\? - reject
@@ -71,11 +67,6 @@ http:
       type: response
       require-body: true
       timeout: 10
-    - match: ;^https://app\.bilibili\.com/bilibili\.app\.dynamic\.v2\.Dynamic/DynAll$
-      name: BiliBili_哔哩哔哩_动态广告@yjqiang
-      type: response
-      require-body: true
-      timeout: 10
 script-providers:
   BiliBili_推荐去广告:
     url: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_diy.js
@@ -103,7 +94,4 @@ script-providers:
     interval: 86400
   BiliBili_哔哩哔哩_Proto去广告@app2smile:
     url: https://raw.githubusercontent.com/app2smile/rules/master/js/bilibili-proto.js
-    interval: 86400
-  BiliBili_哔哩哔哩_动态广告@yjqiang:
-    url: https://raw.githubusercontent.com/yjqiang/surge_scripts/main/scripts/bilibili/bilibili_dynamic.js
     interval: 86400
