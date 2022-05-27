@@ -50,11 +50,6 @@ http:
       type: response
       require-body: true
       timeout: 10
-    - match: ^https:\/\/app\.bilibili\.com\/bilibili\.app\.(view\.v1\.View\/View|dynamic\.v2\.Dynamic\/DynAll)$
-      name: BiliBili_哔哩哔哩_Proto去广告@app2smile
-      type: response
-      require-body: true
-      timeout: 10
 script-providers:
   BiliBili_推荐去广告:
     url: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_diy.js
@@ -79,7 +74,4 @@ script-providers:
     interval: 86400
   BiliBili_哔哩哔哩_热搜发现@ddgksf2013:
     url: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_diy.js
-    interval: 86400
-  BiliBili_哔哩哔哩_Proto去广告@app2smile:
-    url: https://raw.githubusercontent.com/app2smile/rules/master/js/bilibili-proto.js
     interval: 86400
