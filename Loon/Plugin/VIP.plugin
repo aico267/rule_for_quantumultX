@@ -1,7 +1,0 @@
-[MITM]
-hostname = buy.itunes.apple.com,api.revenuecat.com
-
-#通用订阅解锁（by 公众号 iOS黑科技）
-[Script]
-http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://6678888.xyz/quantumultX/sub.js, requires-body=true, timeout=10, tag=我也不知道是什么脚本
-http-response ^https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-path=https://6678888.xyz/quantumultX/subs.js, requires-body=true, timeout=10, tag=随便填吧
