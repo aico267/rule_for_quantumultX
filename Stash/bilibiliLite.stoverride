@@ -9,18 +9,6 @@ http:
     - 'app.bilibili.com'
     - 'grpc.biliapi.net'
     - 'api.biliapi.net'
-  url-rewrite:
-    - ^https?:\/\/api\.bilibili\.com\/x\/v2\/dm\/ad - reject
-      # 可能的一些推广(beta)
-    - ^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\? - reject
-    # 去除搜索中的大家都在搜
-    - ^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/mix_uplist - reject
-    # 可能的一些推广(beta)
-    - ^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\? - reject
-    # BiliBili漫画去广告
-    - ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash - reject
-    - ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/ListFlash - reject
-    #(上面都是复制@fei的）
   script:
     - match: ^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index
       name: BiliBili_推荐去广告
