@@ -5,10 +5,7 @@ http:
     - 'api.bilibili.com'
     - 'api.live.bilibili.com'
     - 'api.vc.bilibili.com'
-    - 'manga.bilibili.com'
     - 'app.bilibili.com'
-    - 'grpc.biliapi.net'
-    - 'api.biliapi.net'
   script:
     - match: ^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index
       name: BiliBili_推荐去广告
