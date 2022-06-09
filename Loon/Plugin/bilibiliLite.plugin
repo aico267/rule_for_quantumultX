@@ -1,7 +1,7 @@
 #bilibili仅去广告
 
 [MITM]
-hostname =api.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,app.bilibili.com, grpc.biliapi.net
+hostname = api.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,app.bilibili.com, grpc.biliapi.net
 
 [Script]
 # > BiliBili_推荐去广告
