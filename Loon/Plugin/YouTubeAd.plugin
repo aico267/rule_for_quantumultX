@@ -1,3 +1,7 @@
+#!name=Block YouTube Advertising
+#!desc=仅用于视频广告（by 神机规则）
+#!openUrl=https://github.com/zqzess/rule_for_quantumultX/blob/master/Loon/Plugin/YouTubeAd.plugin
+
 [URL Rewrite]
 (^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 header
 ^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject
