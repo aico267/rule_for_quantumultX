@@ -2,6 +2,7 @@
 - **ReFix.sgmodule**  规则修正模块
 - **Rewrite.sgmodule** 谷歌重定向
 - **AdBlock.sgmodule** 通用广告屏蔽
+- **AdBlock_lite.sgmodule** 通用广告屏蔽轻量版，只保留我自己想要的
 - **TunOnly.sgmodule** 兼容模式
 - **BaiduAdBlock.sgmodule** 百度系应用广告屏蔽
 - **bilibili.sgmodule**  哔哩哔哩增强脚本整合
@@ -18,3 +19,5 @@
 - **YouTubeAd.sgmodule** YouTube广告屏蔽
 - **zhihu_lite.sgmodule**  知乎助手lite
 - **zhihu.sgmodule**  知乎助手
+- **skip-proxy**  跳过部分应用代理监测
+- **NjtechAutoLogin**  南京工业大学校园网Njetch-Home自动登录

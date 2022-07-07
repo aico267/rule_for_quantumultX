@@ -74,7 +74,6 @@ HOST,developer.apple.com,Apple
 HOST,itunes.apple.com,Apple
 HOST,lookup-api.apple.com,Apple
 HOST,sandbox.itunes.apple.com,Apple
-HOST,testflight.apple.com,Apple
 HOST,hls-amt.itunes.apple.com,Apple
 HOST,hls.itunes.apple.com,Apple
 HOST,np-edge.itunes.apple.com,Apple
@@ -87,6 +86,7 @@ HOST,statici.icloud.com,Apple
 HOST,hls-svod.itunes.apple.com,Apple
 HOST,guzzoni.apple.com,Apple
 HOST,beta.apple.com,Apple
+HOST,testflight.apple.com,Apple
 HOST,www-cdn.icloud.com.akadns.net,Apple
 HOST,mask-api.fe.apple-dns.net,Apple
 HOST,mask-api.icloud.com,Apple
