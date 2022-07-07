@@ -1,0 +1,9 @@
+#!name=微信增强模组
+#!desc=公众号去广告、屏蔽链接跳转
+
+[MITM]
+hostname = %APPEND% mp.weixin.qq.com,weixin110.qq.com
+
+[Script]
+AD= type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js,script-update-interval=0
+Url= type=http-response,pattern=^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/HotKids/Rules/master/Script/weixin110.js,script-update-interval=0
