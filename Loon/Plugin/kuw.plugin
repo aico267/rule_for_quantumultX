@@ -1,0 +1,30 @@
+#!name=酷我插件
+#!desc=搬运@ddgksf2013的酷我脚本
+#!openUrl=https://github.com/ddgksf2013/Cuttlefish
+
+[MITM]
+hostname = rich.kuwo.cn,*.kwcdn.kuwo.cn,mobilead.kuwo.cn, musicpay.kuwo.cn, vip1.kuwo.cn, audiobookpay.kuwo.cn, tingshu.kuwo.cn,omp-audiobookpay.lrts.me
+
+[URL Rewrite]
+# ～ KWYY_酷我音乐_AdBlock@DivineEngine
+^https?:\/\/rich\.kuwo\.cn\/AdService\/kaiping\/.+ _ reject
+# ～ KWYY_酷我音乐_AdBlock@DivineEngine
+^https?:\/\/.+\.kwcdn\.kuwo\.cn\/star\/upload\/.+ _ reject
+# ～ KWYY_酷我音乐_AdBlock@DivineEngine
+^https?:\/\/mobilead\.kuwo\.cn\/EcomResourceServer\/Ad _ reject
+
+# ～ KWYY_酷我听书_Blockad@ddgksf2013
+https?:\/\/audiobookpay\.kuwo\.cn/a\.p\?op=get_advertright _ reject-dict
+# ～ KWYY_酷我听书_Blockad@ddgksf2013
+https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p\?op=get_advertright _ reject-dict
+
+[Script]
+http-response https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p$ script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/kwyy.js, requires-body=true, timeout=10, tag=KWYY_酷我听书_PayInfo@ddgksf2013
+http-response ^https?:\/\/audiobookpay\.kuwo\.cn/a\.p script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/kwyy.js, requires-body=true, timeout=10, tag=KWYY_酷我听书_PayInfo@ddgksf2013
+http-response https://tingshu.kuwo.cn/v2/api/user/info script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/kwyy.js, requires-body=true, timeout=10, tag=KWYY_酷我听书_PayInfo@ddgksf2013
+http-response https?:\/\/audiobooks\.kuwo\.cn\/v2\/api\/user\/info script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/kwyy.js, requires-body=true, timeout=10, tag=KWYY_酷我听书_PayInfo@ddgksf2013
+http-response https?:\/\/tingshu\.kuwo\.cn\/v2\/api\/pay\/vip\/extraVipStatus script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/kwyy.js, requires-body=true, timeout=10, tag=KWYY_酷我听书_PayInfo@ddgksf2013
+http-response ^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/theme script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/kwyy.js, requires-body=true, timeout=10, tag=KWYY_酷我音乐_解锁Vip皮肤设置@ddgksf2013
+http-request ^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver=\d$ script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/kuwodl.js, request-body=true, timeout=10, tag=KWYY_酷我音乐_解锁无损下载（先选听无损，再下载无损）@ddgksf2013
+http-response ^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice) script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/kwyy.js, requires-body=true, timeout=10, tag=KWYY_酷我音乐_解锁会员@ddgksf2013
+http-request ^https?:\/\/vip1\.kuwo\.cn\/vip\/enc\/user\/ script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/kuwovip.js, request-header=true, timeout=10, tag=KWYY_酷我音乐_解锁NEW会员@ddgksf2013
