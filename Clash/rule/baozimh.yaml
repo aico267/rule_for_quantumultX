@@ -1,0 +1,10 @@
+# NAME: 包子漫画
+# AUTHOR: aico267
+# REPO: https://github.com/aico267/rule_for_quantumultX
+# UPDATED: 2022-08-014 13:53
+# DOMAIN-SUFFIX: 1
+# DOMAIN：1
+# TOTAL: 2
+payload:
+  - DOMAIN-SUFFIX,baozimh.com
+  - DOMAIN,cn.webmota.com
