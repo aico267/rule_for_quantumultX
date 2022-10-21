@@ -82,6 +82,7 @@ const $ = new API("njtechAutoLogin", false);
 $.userid = $.read("njtech_id");
 $.userpwd = $.read("njtech_pwd");
 $.optionitem = $.read("njtech_option");
+$.wifi2 = $.read("njtech_wifi2");
 
 // $.userid = '学号';
 // $.userpwd = '密码';
@@ -102,23 +103,29 @@ const headers = {
 
 const {isQX, isLoon, isSurge, isScriptable, isNode} = ENV();
 let loginInfo = {};
+let notifyTitle = "Njtech-Home"
 
 !(async () => {
-    let isStart = true;
+    let isStart = false;
     if (isSurge) {
         const network = $network.wifi.ssid;
         $.info(network);
         if (network === 'Njtech-Home') {
             isStart = true;
-        } else
-            isStart = false;
+        }
+        if ($.wifi2 !== "" && $.wifi2 !== null && $.wifi2 !== undefined) {
+            if (network === $.wifi2) {
+                isStart = true;
+                notifyTitle = $.wifi2;
+            }
+        }
     }
     if (isStart) {
         if (flag) {
             await getLoginInfo();
             await startLogin();
         } else
-            $.notify("Njtech-Home", "", "❌ 请先填写登录信息");
+            $.notify(notifyTitle, "", "❌ 请先填写登录信息");
     }
 })()
     .catch((err) => {
@@ -204,7 +211,7 @@ function startLogin() {
                         onTimeout: () => {
                             $.error("登录失败")
                             $.notify(
-                                "Njtech-Home",
+                                notifyTitle,
                                 "❌ 登录失败",
                                 "请尝试手动登录！"
                             );
@@ -213,7 +220,7 @@ function startLogin() {
                 }).then(resp => {
                     if (resp.statusCode === 200)
                         $.notify(
-                            "Njtech-Home",
+                            notifyTitle,
                             "✅️ 成功",
                             "自动登录成功！"
                         );
@@ -222,7 +229,7 @@ function startLogin() {
                 });
             } else {
                 $.notify(
-                    "Njtech-Home",
+                    notifyTitle,
                     "❌ 登录失败",
                     "请尝试手动登录！"
                 );
@@ -235,13 +242,13 @@ function startLogin() {
                 }).then(resp => {
                     if (resp.statusCode === 200) {
                         $.notify(
-                            "Njtech-Home",
+                            notifyTitle,
                             "✅️ 成功",
                             "自动登录成功！"
                         );
                     } else {
                         $.notify(
-                            "Njtech-Home",
+                            notifyTitle,
                             "❌ 登录失败",
                             "请尝试手动登录！"
                         );

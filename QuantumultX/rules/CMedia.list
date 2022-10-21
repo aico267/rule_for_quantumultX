@@ -1,4 +1,4 @@
-# CMedia rules refresh time: 2022-08-08 02:39:05
+# CMedia rules refresh time: 2022-10-17 00:47:55
 
 USER-AGENT,AcFun*,CMedia
 HOST-SUFFIX,acfun.cn,CMedia
@@ -143,6 +143,10 @@ HOST,upos-bstar1-mirrorakam.akamaized.net,CMedia
 HOST,api.iplay.163.com,CMedia
 HOST,mam.netease.com,CMedia
 HOST,moo.qq.com,CMedia
+HOST-SUFFIX,animetamashi.cn,CMedia
+HOST-SUFFIX,animetamashi.com,CMedia
+HOST-SUFFIX,anitama.cn,CMedia
+HOST-SUFFIX,anitama.net,CMedia
 HOST-SUFFIX,baka.im,CMedia
 HOST-SUFFIX,bigfun.cn,CMedia
 HOST-SUFFIX,bigfunapp.cn,CMedia
@@ -153,7 +157,9 @@ HOST-SUFFIX,bili33.cn,CMedia
 HOST-SUFFIX,bilibili.cc,CMedia
 HOST-SUFFIX,bilibili.cn,CMedia
 HOST-SUFFIX,bilibili.co,CMedia
+HOST-SUFFIX,bilibili.net,CMedia
 HOST-SUFFIX,bilibiligame.cn,CMedia
+HOST-SUFFIX,bilibiligame.co,CMedia
 HOST-SUFFIX,bilibiligame.net,CMedia
 HOST-SUFFIX,bilibilipay.cn,CMedia
 HOST-SUFFIX,bilibilipay.com,CMedia
@@ -163,6 +169,7 @@ HOST-SUFFIX,bilicdn3.com,CMedia
 HOST-SUFFIX,bilicdn4.com,CMedia
 HOST-SUFFIX,bilicdn5.com,CMedia
 HOST-SUFFIX,biligame.cn,CMedia
+HOST-SUFFIX,biligame.co,CMedia
 HOST-SUFFIX,biligame.com,CMedia
 HOST-SUFFIX,biligame.net,CMedia
 HOST-SUFFIX,biligo.com,CMedia
@@ -178,6 +185,7 @@ HOST-SUFFIX,hdslb.com.w.kunlunpi.com,CMedia
 HOST-SUFFIX,hdslb.net,CMedia
 HOST-SUFFIX,hdslb.org,CMedia
 HOST-SUFFIX,im9.com,CMedia
+HOST-SUFFIX,maoercdn.com,CMedia
 HOST-SUFFIX,mcbbs.net,CMedia
 HOST-SUFFIX,mincdn.com,CMedia
 HOST-SUFFIX,sharejoytech.com,CMedia
@@ -294,8 +302,5 @@ IP-CIDR,120.92.108.182/32,CMedia
 IP-CIDR,120.92.113.99/32,CMedia
 IP-CIDR,120.92.153.217/32,CMedia
 IP-CIDR,134.175.207.130/32,CMedia
-IP-CIDR,203.107.1.33/32,CMedia
-IP-CIDR,203.107.1.34/32,CMedia
-IP-CIDR,203.107.1.65/32,CMedia
-IP-CIDR,203.107.1.66/32,CMedia
+IP-CIDR,203.107.1.0/24,CMedia
 IP-CIDR,223.252.199.66/31,CMedia

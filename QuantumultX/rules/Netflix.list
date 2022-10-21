@@ -1,5 +1,6 @@
-# Netflix rules refresh time: 2022-08-08 02:39:05
-HOST,api.fast.com,Netflix
+# Netflix rules refresh time: 2022-10-17 00:47:55
+HOST,e13252.dscg.akamaiedge.net,Netflix
+HOST,h-netflix.online-metrix.net,Netflix
 HOST,netflix.com.edgesuite.net,Netflix
 HOST-SUFFIX,fast.com,Netflix
 HOST-SUFFIX,flxvpn.net,Netflix
@@ -29,6 +30,7 @@ HOST-SUFFIX,nflxsearch.net,Netflix
 HOST-SUFFIX,nflxso.net,Netflix
 HOST-SUFFIX,nflxvideo.net,Netflix
 HOST-SUFFIX,us-west-2.amazonaws.com,Netflix
+HOST-WILDCARD,netflixdnstest*.com,Netflix
 HOST-KEYWORD,apiproxy-device-prod-nlb-,Netflix
 HOST-KEYWORD,dualstack.apiproxy-,Netflix
 HOST-KEYWORD,dualstack.ichnaea-web-,Netflix
@@ -41,6 +43,7 @@ IP-CIDR,108.128.162.0/24,Netflix
 IP-CIDR,108.136.154.16/28,Netflix
 IP-CIDR,108.136.154.32/27,Netflix
 IP-CIDR,108.137.114.0/28,Netflix
+IP-CIDR,108.137.114.64/26,Netflix
 IP-CIDR,108.175.32.0/20,Netflix
 IP-CIDR,13.112.191.184/29,Netflix
 IP-CIDR,13.113.196.64/26,Netflix
@@ -143,6 +146,7 @@ IP-CIDR,13.245.93.160/29,Netflix
 IP-CIDR,13.245.93.176/28,Netflix
 IP-CIDR,13.245.93.192/28,Netflix
 IP-CIDR,13.246.108.0/22,Netflix
+IP-CIDR,13.246.120.0/22,Netflix
 IP-CIDR,13.246.70.0/23,Netflix
 IP-CIDR,13.248.224.0/21,Netflix
 IP-CIDR,13.248.232.0/23,Netflix
@@ -224,6 +228,8 @@ IP-CIDR,130.176.86.0/23,Netflix
 IP-CIDR,130.176.88.0/21,Netflix
 IP-CIDR,130.176.96.0/19,Netflix
 IP-CIDR,15.152.10.0/24,Netflix
+IP-CIDR,15.152.133.112/28,Netflix
+IP-CIDR,15.152.133.128/28,Netflix
 IP-CIDR,15.152.174.0/23,Netflix
 IP-CIDR,15.152.176.0/22,Netflix
 IP-CIDR,15.152.24.0/26,Netflix
@@ -308,6 +314,7 @@ IP-CIDR,16.162.52.0/24,Netflix
 IP-CIDR,16.163.196.0/22,Netflix
 IP-CIDR,16.163.206.0/23,Netflix
 IP-CIDR,16.171.48.0/22,Netflix
+IP-CIDR,16.62.56.224/27,Netflix
 IP-CIDR,160.1.128.0/24,Netflix
 IP-CIDR,176.34.159.192/26,Netflix
 IP-CIDR,177.71.207.128/26,Netflix
@@ -662,6 +669,8 @@ IP-CIDR,3.26.82.240/29,Netflix
 IP-CIDR,3.26.83.0/24,Netflix
 IP-CIDR,3.26.84.0/22,Netflix
 IP-CIDR,3.26.88.0/27,Netflix
+IP-CIDR,3.28.70.48/28,Netflix
+IP-CIDR,3.28.70.96/27,Netflix
 IP-CIDR,3.30.129.0/24,Netflix
 IP-CIDR,3.30.130.0/23,Netflix
 IP-CIDR,3.30.40.84/30,Netflix
@@ -822,6 +831,7 @@ IP-CIDR,35.83.248.40/29,Netflix
 IP-CIDR,35.84.36.0/30,Netflix
 IP-CIDR,35.90.132.0/23,Netflix
 IP-CIDR,35.92.26.0/24,Netflix
+IP-CIDR,35.93.124.0/22,Netflix
 IP-CIDR,37.77.184.0/21,Netflix
 IP-CIDR,38.72.126.0/24,Netflix
 IP-CIDR,44.192.134.240/28,Netflix

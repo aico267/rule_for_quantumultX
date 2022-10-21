@@ -1,14 +1,14 @@
 # NAME: Global
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2022-08-05 22:36:40
-# HOST: 83
+# UPDATED: 2022-09-28 02:38:53
+# HOST: 84
 # HOST-KEYWORD: 38
-# HOST-SUFFIX: 25583
+# HOST-SUFFIX: 25589
 # IP-CIDR: 110
 # IP6-CIDR: 4
 # USER-AGENT: 44
-# TOTAL: 25862
+# TOTAL: 25869
 HOST,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,Global
 HOST,a248.e.akamai.net,Global
 HOST,a771.dscq.akamai.net,Global
@@ -88,6 +88,7 @@ HOST,aqi.aqicn.org,Global
 HOST,assets-priconne-redive-us.akamaized.net,Global
 HOST,cvws.icloud-content.com,Global
 HOST,developer.apple.com,Global
+HOST,lens.l.google.com,Global
 HOST,p16-tiktokcdn-com.akamaized.net,Global
 HOST,services.googleapis.cn,Global
 HOST,testflight.apple.com,Global
@@ -225,7 +226,6 @@ HOST-SUFFIX,spoti.fi,Global
 HOST-SUFFIX,ssrcloud.org,Global
 HOST-SUFFIX,steemitwallet.com,Global
 HOST-SUFFIX,streaming.mediaservices.windows.net,Global
-HOST-SUFFIX,substack.com,Global
 HOST-SUFFIX,supertop.co,Global
 HOST-SUFFIX,telephony.goog,Global
 HOST-SUFFIX,theplatform.com,Global
@@ -4429,6 +4429,7 @@ HOST-SUFFIX,blm898.com,Global
 HOST-SUFFIX,blmdc7.com,Global
 HOST-SUFFIX,blobstore.apple.com,Global
 HOST-SUFFIX,blockbuster.com,Global
+HOST-SUFFIX,blockcast.it,Global
 HOST-SUFFIX,blockcn.com,Global
 HOST-SUFFIX,blockedbyhk.com,Global
 HOST-SUFFIX,blockedinchina.net,Global
@@ -6788,6 +6789,7 @@ HOST-SUFFIX,discord.gg,Global
 HOST-SUFFIX,discord.media,Global
 HOST-SUFFIX,discordapp.com,Global
 HOST-SUFFIX,discordapp.net,Global
+HOST-SUFFIX,discordstatus.com,Global
 HOST-SUFFIX,discreetmilf.com,Global
 HOST-SUFFIX,discuss.com.hk,Global
 HOST-SUFFIX,discuss4u.com,Global
@@ -8063,6 +8065,7 @@ HOST-SUFFIX,firebase.com,Global
 HOST-SUFFIX,firebaseio.com,Global
 HOST-SUFFIX,firecams.com,Global
 HOST-SUFFIX,firech.at,Global
+HOST-SUFFIX,firefox.com,Global
 HOST-SUFFIX,firefoxfan.com,Global
 HOST-SUFFIX,fireofliberty.org,Global
 HOST-SUFFIX,firetell.net,Global
@@ -8215,7 +8218,6 @@ HOST-SUFFIX,fpmt-osel.org,Global
 HOST-SUFFIX,fpmt.org,Global
 HOST-SUFFIX,fpmt.tw,Global
 HOST-SUFFIX,fpmtmexico.org,Global
-HOST-SUFFIX,fpn.firefox.com,Global
 HOST-SUFFIX,fpraognet.xmx-134-1.com,Global
 HOST-SUFFIX,fpraognet.xmx-134.com,Global
 HOST-SUFFIX,fproxy.nl,Global
@@ -8668,6 +8670,7 @@ HOST-SUFFIX,ganbe.jp,Global
 HOST-SUFFIX,gandhidham.com,Global
 HOST-SUFFIX,ganetstudio.com,Global
 HOST-SUFFIX,ganges.com,Global
+HOST-SUFFIX,ganjingworld.com,Global
 HOST-SUFFIX,gaoloumi.cc,Global
 HOST-SUFFIX,gaoming.net,Global
 HOST-SUFFIX,gaopi.net,Global
@@ -10741,6 +10744,7 @@ HOST-SUFFIX,inquirer.net,Global
 HOST-SUFFIX,inredware.com.ar,Global
 HOST-SUFFIX,insder.co,Global
 HOST-SUFFIX,insecam.org,Global
+HOST-SUFFIX,inside.com.tw,Global
 HOST-SUFFIX,insideinternetsecurity.com,Global
 HOST-SUFFIX,insidevoa.com,Global
 HOST-SUFFIX,insightcced.com,Global
@@ -11237,6 +11241,7 @@ HOST-SUFFIX,ji5755.com,Global
 HOST-SUFFIX,jiangweiping.com,Global
 HOST-SUFFIX,jiaoyou8.com,Global
 HOST-SUFFIX,jiayuan.uk,Global
+HOST-SUFFIX,jichangtj.com,Global
 HOST-SUFFIX,jiduvpn.com,Global
 HOST-SUFFIX,jie.idv.tw,Global
 HOST-SUFFIX,jiehua.cz,Global
@@ -12166,6 +12171,7 @@ HOST-SUFFIX,libertytimes.com.tw,Global
 HOST-SUFFIX,libo15.com,Global
 HOST-SUFFIX,library.pressdisplay.com,Global
 HOST-SUFFIX,libraryinformationtechnology.com,Global
+HOST-SUFFIX,libredd.it,Global
 HOST-SUFFIX,libreswan.org,Global
 HOST-SUFFIX,librox.co.za,Global
 HOST-SUFFIX,libsyn.com,Global
@@ -14711,6 +14717,7 @@ HOST-SUFFIX,pastemagazine.com,Global
 HOST-SUFFIX,pastie.org,Global
 HOST-SUFFIX,patelbrothersusa.com,Global
 HOST-SUFFIX,pathtosharepoint.com,Global
+HOST-SUFFIX,patreon.com,Global
 HOST-SUFFIX,patriademarti.com,Global
 HOST-SUFFIX,patrickemaher.com,Global
 HOST-SUFFIX,patrulator.ro,Global
@@ -14893,6 +14900,7 @@ HOST-SUFFIX,picasa.com,Global
 HOST-SUFFIX,picasaweb.com,Global
 HOST-SUFFIX,pichunter.com,Global
 HOST-SUFFIX,picidae.net,Global
+HOST-SUFFIX,picjs.xyz,Global
 HOST-SUFFIX,picnik.com,Global
 HOST-SUFFIX,pictame.com,Global
 HOST-SUFFIX,picturedip.com,Global
@@ -15290,6 +15298,7 @@ HOST-SUFFIX,propub.li,Global
 HOST-SUFFIX,prosiben.de,Global
 HOST-SUFFIX,proteinalactea.com,Global
 HOST-SUFFIX,protempproducts.com,Global
+HOST-SUFFIX,proton.me,Global
 HOST-SUFFIX,protonvpn.com,Global
 HOST-SUFFIX,protv.ro,Global
 HOST-SUFFIX,protvi.ro,Global
@@ -15835,7 +15844,6 @@ HOST-SUFFIX,rejecttheccp.com,Global
 HOST-SUFFIX,rejoiceatsameway.org.au,Global
 HOST-SUFFIX,relaxbbs.com,Global
 HOST-SUFFIX,relay.com.tw,Global
-HOST-SUFFIX,relay.firefox.com,Global
 HOST-SUFFIX,relearnings.com,Global
 HOST-SUFFIX,releaseinternational.org,Global
 HOST-SUFFIX,releenc.org,Global
@@ -16395,7 +16403,6 @@ HOST-SUFFIX,sellsyourhome.org,Global
 HOST-SUFFIX,seminar.shoplineapp.cn,Global
 HOST-SUFFIX,seminars.tca.org.tw,Global
 HOST-SUFFIX,semprot.com,Global
-HOST-SUFFIX,send.firefox.com,Global
 HOST-SUFFIX,send6.com,Global
 HOST-SUFFIX,sendlove.to,Global
 HOST-SUFFIX,sendsmtp.com,Global
@@ -17289,6 +17296,7 @@ HOST-SUFFIX,submit.jotform.us,Global
 HOST-SUFFIX,submit.jotformz.com,Global
 HOST-SUFFIX,submityourflicks.com,Global
 HOST-SUFFIX,submityourtapes.com,Global
+HOST-SUFFIX,substack.com,Global
 HOST-SUFFIX,successfn.com,Global
 HOST-SUFFIX,sudoproxy.net,Global
 HOST-SUFFIX,sudouest.fr,Global
@@ -17741,7 +17749,6 @@ HOST-SUFFIX,test.hao999.ml,Global
 HOST-SUFFIX,test.nadeo.com,Global
 HOST-SUFFIX,testapi.xinbet.net,Global
 HOST-SUFFIX,testmakeer.weebly.com,Global
-HOST-SUFFIX,testpilot.firefox.com,Global
 HOST-SUFFIX,tew.org,Global
 HOST-SUFFIX,texasartsacademics.org,Global
 HOST-SUFFIX,texasboyschoir.org,Global
@@ -19241,6 +19248,7 @@ HOST-SUFFIX,vietnamtophouse.com,Global
 HOST-SUFFIX,vietsn.com,Global
 HOST-SUFFIX,viewyoutube.net,Global
 HOST-SUFFIX,vijayatemple.org,Global
+HOST-SUFFIX,vikacg.com,Global
 HOST-SUFFIX,vilavpn.com,Global
 HOST-SUFFIX,vilavpn6.club,Global
 HOST-SUFFIX,villa.incredib.link,Global
@@ -22429,7 +22437,6 @@ HOST-SUFFIX,www.innovaradinc.freeiz.com,Global
 HOST-SUFFIX,www.inouyelab.org,Global
 HOST-SUFFIX,www.inquisition21.com,Global
 HOST-SUFFIX,www.insect-mall.idv.tw,Global
-HOST-SUFFIX,www.inside.com.tw,Global
 HOST-SUFFIX,www.insidenorthernnevada.com,Global
 HOST-SUFFIX,www.instaforex.eu,Global
 HOST-SUFFIX,www.instantfloppy.net,Global

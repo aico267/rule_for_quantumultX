@@ -1,7 +1,14 @@
-# Outside rules refresh time: 2022-08-08 02:39:05
+# Outside rules refresh time: 2022-10-17 00:47:56
 
+HOST-SUFFIX,discord.com,Outside
+HOST-SUFFIX,discord.gg,Outside
+HOST-SUFFIX,discord.media,Outside
+HOST-SUFFIX,discordapp.com,Outside
+HOST-SUFFIX,discordapp.net,Outside
+HOST-SUFFIX,discordstatus.com,Outside
+
+HOST,lens.l.google.com,Outside
 HOST,voice.telephony.goog,Outside
-
 HOST-SUFFIX,investing.com,Outside
 HOST-SUFFIX,lin.ee,Outside
 HOST-SUFFIX,line.me,Outside
@@ -4915,6 +4922,7 @@ HOST-SUFFIX,blm898.com,Outside
 HOST-SUFFIX,blmdc7.com,Outside
 HOST-SUFFIX,blobstore.apple.com,Outside
 HOST-SUFFIX,blockbuster.com,Outside
+HOST-SUFFIX,blockcast.it,Outside
 HOST-SUFFIX,blockcn.com,Outside
 HOST-SUFFIX,blockedbyhk.com,Outside
 HOST-SUFFIX,blockedinchina.net,Outside
@@ -6084,7 +6092,6 @@ HOST-SUFFIX,chinasmile.net,Outside
 HOST-SUFFIX,chinasocialdemocraticparty.com,Outside
 HOST-SUFFIX,chinasoul.org,Outside
 HOST-SUFFIX,chinasucks.net,Outside
-HOST-SUFFIX,chinatalk.substack.com,Outside
 HOST-SUFFIX,chinatibettrain.com,Outside
 HOST-SUFFIX,chinatopsex.com,Outside
 HOST-SUFFIX,chinatown.com.au,Outside
@@ -6124,7 +6131,6 @@ HOST-SUFFIX,chinesepornweb.com,Outside
 HOST-SUFFIX,chineseposters.net,Outside
 HOST-SUFFIX,chineseradiony.com,Outside
 HOST-SUFFIX,chineseradioseattle.com,Outside
-HOST-SUFFIX,chinesestorytellers.substack.com,Outside
 HOST-SUFFIX,chinesetalks.net,Outside
 HOST-SUFFIX,chinesetimes.us,Outside
 HOST-SUFFIX,chineseupress.com,Outside
@@ -7216,11 +7222,6 @@ HOST-SUFFIX,dirpy.com,Outside
 HOST-SUFFIX,dirtymilfclub.com,Outside
 HOST-SUFFIX,discoins.com,Outside
 HOST-SUFFIX,discord.co,Outside
-HOST-SUFFIX,discord.com,Outside
-HOST-SUFFIX,discord.gg,Outside
-HOST-SUFFIX,discord.media,Outside
-HOST-SUFFIX,discordapp.com,Outside
-HOST-SUFFIX,discordapp.net,Outside
 HOST-SUFFIX,discreetmilf.com,Outside
 HOST-SUFFIX,discuss.com.hk,Outside
 HOST-SUFFIX,discuss4u.com,Outside
@@ -7735,7 +7736,6 @@ HOST-SUFFIX,eduvpn.com,Outside
 HOST-SUFFIX,edv-schmittner.de,Outside
 HOST-SUFFIX,edwardliao.com.au,Outside
 HOST-SUFFIX,edwardsalem.com,Outside
-HOST-SUFFIX,edwardsnowden.substack.com,Outside
 HOST-SUFFIX,edwingomez.com,Outside
 HOST-SUFFIX,ee.qc.to,Outside
 HOST-SUFFIX,ee176.net,Outside
@@ -8460,6 +8460,7 @@ HOST-SUFFIX,fireballrs.de,Outside
 HOST-SUFFIX,firebase.com,Outside
 HOST-SUFFIX,firecams.com,Outside
 HOST-SUFFIX,firech.at,Outside
+HOST-SUFFIX,firefox.com,Outside
 HOST-SUFFIX,firefoxfan.com,Outside
 HOST-SUFFIX,fireofliberty.org,Outside
 HOST-SUFFIX,firetell.net,Outside
@@ -8607,7 +8608,6 @@ HOST-SUFFIX,fpmt-osel.org,Outside
 HOST-SUFFIX,fpmt.org,Outside
 HOST-SUFFIX,fpmt.tw,Outside
 HOST-SUFFIX,fpmtmexico.org,Outside
-HOST-SUFFIX,fpn.firefox.com,Outside
 HOST-SUFFIX,fpraognet.xmx-134-1.com,Outside
 HOST-SUFFIX,fpraognet.xmx-134.com,Outside
 HOST-SUFFIX,fproxy.nl,Outside
@@ -9056,6 +9056,7 @@ HOST-SUFFIX,ganbe.jp,Outside
 HOST-SUFFIX,gandhidham.com,Outside
 HOST-SUFFIX,ganetstudio.com,Outside
 HOST-SUFFIX,ganges.com,Outside
+HOST-SUFFIX,ganjingworld.com,Outside
 HOST-SUFFIX,gaoloumi.cc,Outside
 HOST-SUFFIX,gaoming.net,Outside
 HOST-SUFFIX,gaopi.net,Outside
@@ -10750,7 +10751,6 @@ HOST-SUFFIX,hyc1324.com,Outside
 HOST-SUFFIX,hyc1324.xyz,Outside
 HOST-SUFFIX,hychot4.xyz,Outside
 HOST-SUFFIX,hyper.co,Outside
-HOST-SUFFIX,hyperbolea.substack.com,Outside
 HOST-SUFFIX,hyperrate.com,Outside
 HOST-SUFFIX,hypothes.is,Outside
 HOST-SUFFIX,hyread.com.tw,Outside
@@ -11068,6 +11068,7 @@ HOST-SUFFIX,inpho.ie,Outside
 HOST-SUFFIX,inquirer.net,Outside
 HOST-SUFFIX,inredware.com.ar,Outside
 HOST-SUFFIX,insecam.org,Outside
+HOST-SUFFIX,inside.com.tw,Outside
 HOST-SUFFIX,insideinternetsecurity.com,Outside
 HOST-SUFFIX,insidevoa.com,Outside
 HOST-SUFFIX,insightcced.com,Outside
@@ -11325,7 +11326,6 @@ HOST-SUFFIX,ixxzp.com,Outside
 HOST-SUFFIX,iyb88.com,Outside
 HOST-SUFFIX,iyouport.com,Outside
 HOST-SUFFIX,iyouport.org,Outside
-HOST-SUFFIX,iyouport.substack.com,Outside
 HOST-SUFFIX,iyoutube.com,Outside
 HOST-SUFFIX,iysse.com,Outside
 HOST-SUFFIX,izaobao.us,Outside
@@ -11549,6 +11549,7 @@ HOST-SUFFIX,ji5755.com,Outside
 HOST-SUFFIX,jiangweiping.com,Outside
 HOST-SUFFIX,jiaoyou8.com,Outside
 HOST-SUFFIX,jiayuan.uk,Outside
+HOST-SUFFIX,jichangtj.com,Outside
 HOST-SUFFIX,jiduvpn.com,Outside
 HOST-SUFFIX,jie.idv.tw,Outside
 HOST-SUFFIX,jiehua.cz,Outside
@@ -12463,6 +12464,7 @@ HOST-SUFFIX,libertytimes.com.tw,Outside
 HOST-SUFFIX,libo15.com,Outside
 HOST-SUFFIX,library.pressdisplay.com,Outside
 HOST-SUFFIX,libraryinformationtechnology.com,Outside
+HOST-SUFFIX,libredd.it,Outside
 HOST-SUFFIX,libreswan.org,Outside
 HOST-SUFFIX,librox.co.za,Outside
 HOST-SUFFIX,liceosantaclara.cl,Outside
@@ -14931,6 +14933,7 @@ HOST-SUFFIX,pastemagazine.com,Outside
 HOST-SUFFIX,pastie.org,Outside
 HOST-SUFFIX,patelbrothersusa.com,Outside
 HOST-SUFFIX,pathtosharepoint.com,Outside
+HOST-SUFFIX,patreon.com,Outside
 HOST-SUFFIX,patriademarti.com,Outside
 HOST-SUFFIX,patrickemaher.com,Outside
 HOST-SUFFIX,patrulator.ro,Outside
@@ -15104,6 +15107,7 @@ HOST-SUFFIX,picacomiccn.com,Outside
 HOST-SUFFIX,picasa.com,Outside
 HOST-SUFFIX,pichunter.com,Outside
 HOST-SUFFIX,picidae.net,Outside
+HOST-SUFFIX,picjs.xyz,Outside
 HOST-SUFFIX,picnik.com,Outside
 HOST-SUFFIX,pictame.com,Outside
 HOST-SUFFIX,picturedip.com,Outside
@@ -15486,6 +15490,7 @@ HOST-SUFFIX,propub.li,Outside
 HOST-SUFFIX,prosiben.de,Outside
 HOST-SUFFIX,proteinalactea.com,Outside
 HOST-SUFFIX,protempproducts.com,Outside
+HOST-SUFFIX,proton.me,Outside
 HOST-SUFFIX,protonvpn.com,Outside
 HOST-SUFFIX,protv.ro,Outside
 HOST-SUFFIX,protvi.ro,Outside
@@ -16016,7 +16021,6 @@ HOST-SUFFIX,rejecttheccp.com,Outside
 HOST-SUFFIX,rejoiceatsameway.org.au,Outside
 HOST-SUFFIX,relaxbbs.com,Outside
 HOST-SUFFIX,relay.com.tw,Outside
-HOST-SUFFIX,relay.firefox.com,Outside
 HOST-SUFFIX,relearnings.com,Outside
 HOST-SUFFIX,releaseinternational.org,Outside
 HOST-SUFFIX,releenc.org,Outside
@@ -16562,7 +16566,6 @@ HOST-SUFFIX,sellsyourhome.org,Outside
 HOST-SUFFIX,seminar.shoplineapp.cn,Outside
 HOST-SUFFIX,seminars.tca.org.tw,Outside
 HOST-SUFFIX,semprot.com,Outside
-HOST-SUFFIX,send.firefox.com,Outside
 HOST-SUFFIX,send6.com,Outside
 HOST-SUFFIX,sendlove.to,Outside
 HOST-SUFFIX,sendsmtp.com,Outside
@@ -17419,6 +17422,7 @@ HOST-SUFFIX,submit.jotform.us,Outside
 HOST-SUFFIX,submit.jotformz.com,Outside
 HOST-SUFFIX,submityourflicks.com,Outside
 HOST-SUFFIX,submityourtapes.com,Outside
+HOST-SUFFIX,substack.com,Outside
 HOST-SUFFIX,successfn.com,Outside
 HOST-SUFFIX,sudoproxy.net,Outside
 HOST-SUFFIX,sudouest.fr,Outside
@@ -17842,7 +17846,6 @@ HOST-SUFFIX,test.hao999.ml,Outside
 HOST-SUFFIX,test.nadeo.com,Outside
 HOST-SUFFIX,testapi.xinbet.net,Outside
 HOST-SUFFIX,testmakeer.weebly.com,Outside
-HOST-SUFFIX,testpilot.firefox.com,Outside
 HOST-SUFFIX,tew.org,Outside
 HOST-SUFFIX,texasartsacademics.org,Outside
 HOST-SUFFIX,texasboyschoir.org,Outside
@@ -19252,6 +19255,7 @@ HOST-SUFFIX,vietnamtophouse.com,Outside
 HOST-SUFFIX,vietsn.com,Outside
 HOST-SUFFIX,viewyoutube.net,Outside
 HOST-SUFFIX,vijayatemple.org,Outside
+HOST-SUFFIX,vikacg.com,Outside
 HOST-SUFFIX,vilavpn.com,Outside
 HOST-SUFFIX,vilavpn6.club,Outside
 HOST-SUFFIX,villa.incredib.link,Outside
@@ -22393,7 +22397,6 @@ HOST-SUFFIX,www.innovaradinc.freeiz.com,Outside
 HOST-SUFFIX,www.inouyelab.org,Outside
 HOST-SUFFIX,www.inquisition21.com,Outside
 HOST-SUFFIX,www.insect-mall.idv.tw,Outside
-HOST-SUFFIX,www.inside.com.tw,Outside
 HOST-SUFFIX,www.insidenorthernnevada.com,Outside
 HOST-SUFFIX,www.instaforex.eu,Outside
 HOST-SUFFIX,www.instantfloppy.net,Outside
@@ -25138,7 +25141,6 @@ HOST-SUFFIX,yinhehyvip.com,Outside
 HOST-SUFFIX,yinlei.org,Outside
 HOST-SUFFIX,yippy.com,Outside
 HOST-SUFFIX,yipub.com,Outside
-HOST-SUFFIX,yisay.substack.com,Outside
 HOST-SUFFIX,yivarlden.com,Outside
 HOST-SUFFIX,yiyechat.com,Outside
 HOST-SUFFIX,yiyuanjy.w185-e0.ezwebtest.com,Outside
