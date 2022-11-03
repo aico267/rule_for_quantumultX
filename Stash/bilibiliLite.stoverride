@@ -7,11 +7,6 @@ http:
     - 'api.vc.bilibili.com'
     - 'app.bilibili.com'
   script:
-    - match: ^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index
-      name: BiliBili_推荐去广告
-      type: response
-      require-body: true
-      timeout: 10
     - match: ^https?:\/\/api\.bilibili\.com\/pgc\/page\/bangumi
       name: BiliBili_追番去广告
       type: response
@@ -19,11 +14,6 @@ http:
       timeout: 10
     - match: ^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom
       name: BiliBili_直播去广告
-      type: response
-      require-body: true
-      timeout: 10
-    - match: ^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/dynamic_(history|new)\?
-      name: BiliBili_动态去广告
       type: response
       require-body: true
       timeout: 10
@@ -37,7 +27,7 @@ http:
       type: response
       require-body: true
       timeout: 10
-    - match: ^https://app\.bilibili\.com/x/v2/account/mine\?access_key
+    - match: ^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine
       name: BiliBili_我的页面处理
       type: response
       require-body: true
@@ -58,29 +48,23 @@ http:
       require-body: true
       timeout: 10
 script-providers:
-  BiliBili_推荐去广告:
-    url: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_json.js
-    interval: 86400
   BiliBili_追番去广告:
-    url: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_json.js
+    url: https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_json.js
     interval: 86400
   BiliBili_直播去广告:
-    url: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_json.js
-    interval: 86400
-  BiliBili_动态去广告:
-    url: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_json.js
+    url: https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_json.js
     interval: 86400
   BiliBili_1080P:
-    url: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_json.js
+    url: https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_json.js
     interval: 86400
   BiliBili_标签页处理:
-    url: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_json.js
+    url: https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_json.js
     interval: 86400
   BiliBili_我的页面处理:
-    url: https://raw.githubusercontent.com/iEwha/Profiles/master/Script/bilibili_mine.js
+    url: https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_json.js
     interval: 86400
   BiliBili_哔哩哔哩_热搜发现@ddgksf2013:
-    url: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_json.js
+    url: https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_json.js
     interval: 86400
   bili-json:
     url: https://raw.githubusercontent.com/app2smile/rules/master/js/bilibili-json.js
