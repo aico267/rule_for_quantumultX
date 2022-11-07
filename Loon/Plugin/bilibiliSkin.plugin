@@ -1,5 +1,5 @@
 #!name=B站魔改皮肤
-#!desc=魔改皮肤
+#!desc=魔改皮肤，需要重启几次app
 
 [MITM]
 hostname = api.bilibili.com,app.bilibili.com
