@@ -49,22 +49,22 @@ http:
       timeout: 10
 script-providers:
   BiliBili_追番去广告:
-    url: https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_json.js
+    url: https://raw.githubusercontent.com/aico267/rule_for_quantumultX/master/js/bilibili.js
     interval: 86400
   BiliBili_直播去广告:
-    url: https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_json.js
+    url: https://raw.githubusercontent.com/aico267/rule_for_quantumultX/master/js/bilibili.js
     interval: 86400
   BiliBili_1080P:
-    url: https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_json.js
+    url: https://raw.githubusercontent.com/aico267/rule_for_quantumultX/master/js/bilibili.js
     interval: 86400
   BiliBili_标签页处理:
-    url: https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_json.js
+    url: https://raw.githubusercontent.com/aico267/rule_for_quantumultX/master/js/bilibili.js
     interval: 86400
   BiliBili_我的页面处理:
-    url: https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_json.js
+    url: https://raw.githubusercontent.com/aico267/rule_for_quantumultX/master/js/bilibili.js
     interval: 86400
   BiliBili_哔哩哔哩_热搜发现@ddgksf2013:
-    url: https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_json.js
+    url: https://raw.githubusercontent.com/aico267/rule_for_quantumultX/master/js/bilibili.js
     interval: 86400
   bili-json:
     url: https://raw.githubusercontent.com/app2smile/rules/master/js/bilibili-json.js
