@@ -1,3 +1,9 @@
+#!name=规则修正
+#!desc=修正一些未被匹配识别的域名走代理或直连,Proxy请指向你的代理节点
+#!openUrl=
+#!author=zqzess
+#!homepage=https://github.com/zqzess/rule_for_quantumultX
+#!icon=
 [Rule]
 #小绿人
 DOMAIN-SUFFIX,greenmangaming.com,DIRECT
@@ -82,3 +88,6 @@ DOMAIN,pagead2.googleadservices.com,REJECT
 
 #pikpak网盘
 DOMAIN,access.mypikpak.com,PROXY
+
+#scriptable
+DOMAIN,gallery.scriptable.app,PROXY

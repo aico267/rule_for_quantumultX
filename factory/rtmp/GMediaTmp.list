@@ -4,7 +4,6 @@ HOST-SUFFIX,go.com,GMedia
 USER-AGENT,AbemaTV*,GMedia
 HOST-SUFFIX,abema.io,GMedia
 HOST-SUFFIX,abema.tv,GMedia
-HOST-SUFFIX,akamaized.net,GMedia
 HOST-SUFFIX,ameba.jp,GMedia
 HOST-SUFFIX,hayabusa.io,GMedia
 HOST-KEYWORD,abematv.akamaized.net,GMedia
@@ -44,7 +43,6 @@ HOST,d25xi40x97liuc.cloudfront.net,GMedia
 HOST,dmqdd6hw24ucf.cloudfront.net,GMedia
 HOST,d27xxe7juh1us6.cloudfront.net,GMedia
 HOST,dualstack.pefs-alb-266603904.eu-west-1.elb.amazonaws.com,GMedia
-HOST,www.amazon.com,GMedia
 
 HOST-SUFFIX,tv.apple.com,GMedia
 HOST,np-edge.itunes.apple.com,GMedia
@@ -76,22 +74,15 @@ HOST-SUFFIX,watchnebula.com,GMedia
 HOST-SUFFIX,zype.com,GMedia
 
 USER-AGENT,DAZN*,GMedia
-HOST-KEYWORD,voddazn,GMedia
-HOST-SUFFIX,dazn.com,GMedia
+HOST-WILDCARD,dc?livedazn.akamaized.net,GMedia
+HOST-WILDCARD,dc?voddazn.akamaized.net,GMedia
 HOST-SUFFIX,dazn-api.com,GMedia
+HOST-SUFFIX,dazn.com,GMedia
 HOST-SUFFIX,dazndn.com,GMedia
-HOST-SUFFIX,daznedge.net,GMedia
-HOST-SUFFIX,daznfeeds.com,GMedia
-HOST-SUFFIX,daznservices.com,GMedia
 HOST-SUFFIX,indazn.com,GMedia
 HOST-SUFFIX,indaznlab.com,GMedia
-HOST,daznfeeds.com.edgekey.net,GMedia
-HOST,dca-lm-livedazn.secure.footprint.net,GMedia
-HOST,h-dazn.online-metrix.net,GMedia
-HOST,images-daznservices-com.cdn.ampproject.org,GMedia
-HOST,d151l6v8er5bdm.cloudfront.net,GMedia
-IP-CIDR,185.42.236.0/24,GMedia
-IP-CIDR,185.42.238.0/24,GMedia
+HOST-SUFFIX,dc1live2lindazn.akamaized.net,GMedia
+HOST-SUFFIX,dc1-lm-live2dazn.secure.footprint.net,GMedia
 
 USER-AGENT,Disney*,GMedia
 HOST-SUFFIX,adobedtm.com,GMedia
@@ -229,10 +220,14 @@ HOST-SUFFIX,nflxso.net,GMedia
 HOST-SUFFIX,nflxvideo.net,GMedia
 HOST,e13252.dscg.akamaiedge.net,GMedia
 HOST,h-netflix.online-metrix.net,GMedia
+HOST,netflix.com.edgesuite.net,GMedia
 IP-CIDR,23.246.0.0/18,GMedia
+IP-CIDR,34.210.42.111/32,GMedia
 IP-CIDR,37.77.184.0/21,GMedia
 IP-CIDR,38.72.126.0/24,GMedia
 IP-CIDR,45.57.0.0/17,GMedia
+IP-CIDR,52.89.124.203/32,GMedia
+IP-CIDR,54.148.37.5/32,GMedia
 IP-CIDR,64.120.128.0/17,GMedia
 IP-CIDR,66.197.128.0/17,GMedia
 IP-CIDR,69.53.224.0/19,GMedia
@@ -244,9 +239,19 @@ IP-CIDR,192.173.64.0/18,GMedia
 IP-CIDR,198.38.96.0/19,GMedia
 IP-CIDR,198.45.48.0/20,GMedia
 IP-CIDR,208.75.76.0/22,GMedia
-IP-CIDR,34.210.42.111/32,GMedia
-IP-CIDR,52.89.124.203/32,GMedia
-IP-CIDR,54.148.37.5/32,GMedia
+IP6-CIDR,2607:fb10::/32,GMedia
+IP6-CIDR,2620:10c:7000::/44,GMedia
+IP6-CIDR,2a00:86c0::/32,GMedia
+IP6-CIDR,2a03:5640::/32,GMedia
+
+HOST-SUFFIX,dmc.nico,GMedia
+HOST-SUFFIX,nicovideo.jp,GMedia
+HOST-SUFFIX,nicodic.jp,GMedia
+HOST-SUFFIX,nicomanga.jp,GMedia
+HOST-SUFFIX,niconico.com,GMedia
+HOST-SUFFIX,nicoseiga.jp,GMedia
+HOST-SUFFIX,nimg.jp,GMedia
+HOST-SUFFIX,simg.jp,GMedia
 
 HOST-SUFFIX,pandora.com,GMedia
 
@@ -338,7 +343,6 @@ HOST,rpg.pic-imges.com,GMedia
 HOST,rthklive2-lh.akamaihd.net,GMedia
 HOST,tv.applemusic.com,GMedia
 HOST,uts-api.itunes.apple.com,GMedia
-HOST,www.amazon.com,GMedia
 HOST-SUFFIX,112263.com,GMedia
 HOST-SUFFIX,20thcenturystudios.com.au,GMedia
 HOST-SUFFIX,20thcenturystudios.com.br,GMedia
@@ -346,6 +350,7 @@ HOST-SUFFIX,20thcenturystudios.jp,GMedia
 HOST-SUFFIX,5itv.tv,GMedia
 HOST-SUFFIX,abc-studios.com,GMedia
 HOST-SUFFIX,abc.com,GMedia
+HOST-SUFFIX,abema-tv.com,GMedia
 HOST-SUFFIX,abema.io,GMedia
 HOST-SUFFIX,abema.tv,GMedia
 HOST-SUFFIX,aboutamazon.com,GMedia
@@ -364,6 +369,7 @@ HOST-SUFFIX,amazonaws.com,GMedia
 HOST-SUFFIX,amazonprimevideo.cn,GMedia
 HOST-SUFFIX,amazonprimevideo.com.cn,GMedia
 HOST-SUFFIX,amazonprimevideos.com,GMedia
+HOST-SUFFIX,amazonuniversity.jobs,GMedia
 HOST-SUFFIX,amazonvideo.cc,GMedia
 HOST-SUFFIX,amazonvideo.com,GMedia
 HOST-SUFFIX,amazonvideodirect.cc,GMedia
@@ -420,6 +426,7 @@ HOST-SUFFIX,bentobox.tv,GMedia
 HOST-SUFFIX,bidi.net.uk,GMedia
 HOST-SUFFIX,bigbigchannel.com.hk,GMedia
 HOST-SUFFIX,bigbigshop.com,GMedia
+HOST-SUFFIX,biggggg.com,GMedia
 HOST-SUFFIX,biliintl.com,GMedia
 HOST-SUFFIX,bitmovin.com,GMedia
 HOST-SUFFIX,bootstrapcdn.com,GMedia
@@ -498,6 +505,7 @@ HOST-SUFFIX,dazndn.com,GMedia
 HOST-SUFFIX,daznedge.net,GMedia
 HOST-SUFFIX,daznfeeds.com,GMedia
 HOST-SUFFIX,daznservices.com,GMedia
+HOST-SUFFIX,dc1-lm-live2dazn.secure.footprint.net,GMedia
 HOST-SUFFIX,dc2-vodhls-perform.secure.footprint.net,GMedia
 HOST-SUFFIX,dca-ll-livedazn-dznlivejp.s.llnwi.net,GMedia
 HOST-SUFFIX,dca-ll-voddazn-dznvodjp.s.llnwi.net,GMedia
@@ -847,6 +855,7 @@ HOST-SUFFIX,googlevideo.com,GMedia
 HOST-SUFFIX,gorin.jp,GMedia
 HOST-SUFFIX,gvt1.com,GMedia
 HOST-SUFFIX,gvt2.com,GMedia
+HOST-SUFFIX,haiwaikan.com,GMedia
 HOST-SUFFIX,happyon.jp,GMedia
 HOST-SUFFIX,hath.network,GMedia
 HOST-SUFFIX,hayabusa.dev,GMedia
@@ -945,6 +954,7 @@ HOST-SUFFIX,intercom.io,GMedia
 HOST-SUFFIX,intl-rcd.iqiyi.com,GMedia
 HOST-SUFFIX,intl-subscription.iqiyi.com,GMedia
 HOST-SUFFIX,intl.iqiyi.com,GMedia
+HOST-SUFFIX,iole.tv,GMedia
 HOST-SUFFIX,ipstatp.com,GMedia
 HOST-SUFFIX,iq.com,GMedia
 HOST-SUFFIX,italkbb.com,GMedia
@@ -1015,6 +1025,7 @@ HOST-SUFFIX,moov.hk,GMedia
 HOST-SUFFIX,moviesanywhere.com,GMedia
 HOST-SUFFIX,msnbc.com,GMedia
 HOST-SUFFIX,mtvnservices.com,GMedia
+HOST-SUFFIX,mudvod.tv,GMedia
 HOST-SUFFIX,muscdn.com,GMedia
 HOST-SUFFIX,mushymush.tv,GMedia
 HOST-SUFFIX,musical.ly,GMedia
@@ -1065,6 +1076,9 @@ HOST-SUFFIX,nbcsports.com,GMedia
 HOST-SUFFIX,nbcsports.h-cdn.com,GMedia
 HOST-SUFFIX,nbcudigitaladops.com,GMedia
 HOST-SUFFIX,nbcuni.com,GMedia
+HOST-SUFFIX,nbys.tv,GMedia
+HOST-SUFFIX,nbys1.tv,GMedia
+HOST-SUFFIX,nbyy.tv,GMedia
 HOST-SUFFIX,nebula.app,GMedia
 HOST-SUFFIX,netflix.ca,GMedia
 HOST-SUFFIX,netflix.com,GMedia
@@ -1085,6 +1099,7 @@ HOST-SUFFIX,netflixinvestor.com,GMedia
 HOST-SUFFIX,netflixstudios.com,GMedia
 HOST-SUFFIX,netflixtechblog.com,GMedia
 HOST-SUFFIX,nettyinternet.com,GMedia
+HOST-SUFFIX,newpppp.com,GMedia
 HOST-SUFFIX,newsnowfox.com,GMedia
 HOST-SUFFIX,nflxext.com,GMedia
 HOST-SUFFIX,nflximg.com,GMedia
@@ -1102,6 +1117,9 @@ HOST-SUFFIX,nikkei.co.jp,GMedia
 HOST-SUFFIX,nikkei.com,GMedia
 HOST-SUFFIX,nikkei.jp,GMedia
 HOST-SUFFIX,nimg.jp,GMedia
+HOST-SUFFIX,nivod.tv,GMedia
+HOST-SUFFIX,nivodi.tv,GMedia
+HOST-SUFFIX,nivodz.com,GMedia
 HOST-SUFFIX,nomadlandmovie.ch,GMedia
 HOST-SUFFIX,now-ashare.com,GMedia
 HOST-SUFFIX,now-tv.com,GMedia
@@ -1124,6 +1142,12 @@ HOST-SUFFIX,nytimg.com,GMedia
 HOST-SUFFIX,nytlog.com,GMedia
 HOST-SUFFIX,nytstyle.com,GMedia
 HOST-SUFFIX,ocnttv.com,GMedia
+HOST-SUFFIX,olehd.com,GMedia
+HOST-SUFFIX,olelive.com,GMedia
+HOST-SUFFIX,olevod.com,GMedia
+HOST-SUFFIX,olevod.io,GMedia
+HOST-SUFFIX,olevod.tv,GMedia
+HOST-SUFFIX,olevodtv.com,GMedia
 HOST-SUFFIX,originalhulu.com,GMedia
 HOST-SUFFIX,orlandohurricane.com,GMedia
 HOST-SUFFIX,overcast.fm,GMedia
@@ -1356,6 +1380,7 @@ HOST-SUFFIX,voatibetanenglish.com,GMedia
 HOST-SUFFIX,voatiengviet.com,GMedia
 HOST-SUFFIX,voatour.com,GMedia
 HOST-SUFFIX,voazimbabwe.com,GMedia
+HOST-SUFFIX,vod360.net,GMedia
 HOST-SUFFIX,vox-cdn.com,GMedia
 HOST-SUFFIX,vox.com,GMedia
 HOST-SUFFIX,voxcreative.com,GMedia
@@ -1404,6 +1429,8 @@ HOST-SUFFIX,zeetv.com,GMedia
 HOST-SUFFIX,zeeuk.com,GMedia
 HOST-SUFFIX,zeriamerikes.com,GMedia
 HOST-SUFFIX,zype.com,GMedia
+HOST-WILDCARD,dc?livedazn.akamaized.net,GMedia
+HOST-WILDCARD,dc?voddazn.akamaized.net,GMedia
 HOST-WILDCARD,netflixdnstest*.com,GMedia
 HOST-WILDCARD,youtube.*,GMedia
 HOST-WILDCARD,youtube.*.*,GMedia
@@ -1420,12 +1447,15 @@ HOST-KEYWORD,bbcfmt,GMedia
 HOST-KEYWORD,discovery.uplynk.com,GMedia
 HOST-KEYWORD,dualstack.apiproxy-,GMedia
 HOST-KEYWORD,dualstack.ichnaea-web-,GMedia
+HOST-KEYWORD,hamivideo.cdn.hinet.net,GMedia
 HOST-KEYWORD,hbogoasia,GMedia
 HOST-KEYWORD,japonx,GMedia
 HOST-KEYWORD,japronx,GMedia
 HOST-KEYWORD,jooxweb-api,GMedia
 HOST-KEYWORD,netflixdnstest,GMedia
+HOST-KEYWORD,nivod,GMedia
 HOST-KEYWORD,nowtv100,GMedia
+HOST-KEYWORD,olevod,GMedia
 HOST-KEYWORD,rthklive,GMedia
 HOST-KEYWORD,spotify.com,GMedia
 HOST-KEYWORD,tiktokcdn-,GMedia
@@ -1871,7 +1901,8 @@ IP-CIDR,203.198.0.0/20,GMedia
 IP-CIDR,203.198.80.0/21,GMedia
 IP-CIDR,203.211.4.169/32,GMedia
 IP-CIDR,203.211.4.193/32,GMedia
-IP-CIDR,203.74.95.128/28,GMedia
+IP-CIDR,203.74.95.131/32,GMedia
+IP-CIDR,203.74.95.139/32,GMedia
 IP-CIDR,203.74.95.153/32,GMedia
 IP-CIDR,203.75.84.0/24,GMedia
 IP-CIDR,203.80.97.203/32,GMedia
@@ -2060,7 +2091,6 @@ IP-CIDR,52.48.0.0/14,GMedia
 IP-CIDR,52.5.0.0/16,GMedia
 IP-CIDR,52.54.0.0/16,GMedia
 IP-CIDR,52.7.0.0/16,GMedia
-IP-CIDR,52.71.0.0/16,GMedia
 IP-CIDR,52.72.0.0/16,GMedia
 IP-CIDR,52.88.0.0/15,GMedia
 IP-CIDR,54.0.0.0/16,GMedia
