@@ -1,10 +1,10 @@
 # NAME: GlobalMedia
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2023-04-28 02:11:39
-# HOST: 28
+# UPDATED: 2023-10-07 14:20:10
+# HOST: 25
 # HOST-KEYWORD: 24
-# HOST-SUFFIX: 1086
+# HOST-SUFFIX: 1089
 # HOST-WILDCARD: 10
 # IP-CIDR: 918
 # IP6-CIDR: 6
@@ -31,13 +31,10 @@ HOST,ktpx.amazon.com,GlobalMedia
 HOST,news-client.apple.com,GlobalMedia
 HOST,news-edge.apple.com,GlobalMedia
 HOST,news-events.apple.com,GlobalMedia
-HOST,np-edge.itunes.apple.com,GlobalMedia
 HOST,p.bstarstatic.com,GlobalMedia
-HOST,play-edge.itunes.apple.com,GlobalMedia
 HOST,rpg.pic-imges.com,GlobalMedia
 HOST,rthklive2-lh.akamaihd.net,GlobalMedia
 HOST,tv.applemusic.com,GlobalMedia
-HOST,uts-api.itunes.apple.com,GlobalMedia
 HOST-SUFFIX,112263.com,GlobalMedia
 HOST-SUFFIX,20thcenturystudios.com.au,GlobalMedia
 HOST-SUFFIX,20thcenturystudios.com.br,GlobalMedia
@@ -62,8 +59,9 @@ HOST-SUFFIX,amazon.jobs,GlobalMedia
 HOST-SUFFIX,amazonaws.co.uk,GlobalMedia
 HOST-SUFFIX,amazonaws.com,GlobalMedia
 HOST-SUFFIX,amazonprimevideo.cn,GlobalMedia
-HOST-SUFFIX,amazonprimevideo.com.cn,GlobalMedia
 HOST-SUFFIX,amazonprimevideos.com,GlobalMedia
+HOST-SUFFIX,amazontools.com,GlobalMedia
+HOST-SUFFIX,amazontours.com,GlobalMedia
 HOST-SUFFIX,amazonuniversity.jobs,GlobalMedia
 HOST-SUFFIX,amazonvideo.cc,GlobalMedia
 HOST-SUFFIX,amazonvideo.com,GlobalMedia
@@ -179,6 +177,7 @@ HOST-SUFFIX,cobuzz.fr,GlobalMedia
 HOST-SUFFIX,content.jwplatform.com,GlobalMedia
 HOST-SUFFIX,control.kochava.com,GlobalMedia
 HOST-SUFFIX,conviva.com,GlobalMedia
+HOST-SUFFIX,cookielaw.org,GlobalMedia
 HOST-SUFFIX,coronavirusnow.com,GlobalMedia
 HOST-SUFFIX,cstatic.net,GlobalMedia
 HOST-SUFFIX,curbed.com,GlobalMedia
@@ -210,6 +209,7 @@ HOST-SUFFIX,dengiamerika.com,GlobalMedia
 HOST-SUFFIX,dilcdn.com,GlobalMedia
 HOST-SUFFIX,directv.com,GlobalMedia
 HOST-SUFFIX,disco-api.com,GlobalMedia
+HOST-SUFFIX,discomax.com,GlobalMedia
 HOST-SUFFIX,discovery.com,GlobalMedia
 HOST-SUFFIX,discoveryplus.co.uk,GlobalMedia
 HOST-SUFFIX,discoveryplus.com,GlobalMedia
@@ -217,7 +217,6 @@ HOST-SUFFIX,discoveryplus.in,GlobalMedia
 HOST-SUFFIX,disney-asia.com,GlobalMedia
 HOST-SUFFIX,disney-discount.com,GlobalMedia
 HOST-SUFFIX,disney-plus.net,GlobalMedia
-HOST-SUFFIX,disney-portal.my.onetrust.com,GlobalMedia
 HOST-SUFFIX,disney-studio.com,GlobalMedia
 HOST-SUFFIX,disney-studio.net,GlobalMedia
 HOST-SUFFIX,disney.asia,GlobalMedia
@@ -250,6 +249,7 @@ HOST-SUFFIX,disney.in,GlobalMedia
 HOST-SUFFIX,disney.io,GlobalMedia
 HOST-SUFFIX,disney.it,GlobalMedia
 HOST-SUFFIX,disney.my,GlobalMedia
+HOST-SUFFIX,disney.my.sentry.io,GlobalMedia
 HOST-SUFFIX,disney.nl,GlobalMedia
 HOST-SUFFIX,disney.no,GlobalMedia
 HOST-SUFFIX,disney.ph,GlobalMedia
@@ -645,7 +645,6 @@ HOST-SUFFIX,indazn.com,GlobalMedia
 HOST-SUFFIX,indaznlab.com,GlobalMedia
 HOST-SUFFIX,insidevoa.com,GlobalMedia
 HOST-SUFFIX,inter.iqiyi.com,GlobalMedia
-HOST-SUFFIX,intercom.io,GlobalMedia
 HOST-SUFFIX,intl-rcd.iqiyi.com,GlobalMedia
 HOST-SUFFIX,intl-subscription.iqiyi.com,GlobalMedia
 HOST-SUFFIX,intl.iqiyi.com,GlobalMedia
@@ -710,6 +709,7 @@ HOST-SUFFIX,marvelspotlightplays.com,GlobalMedia
 HOST-SUFFIX,marvelsuperheroseptember.com,GlobalMedia
 HOST-SUFFIX,marvelsuperwar.com,GlobalMedia
 HOST-SUFFIX,maskedsingerfox.com,GlobalMedia
+HOST-SUFFIX,max.com,GlobalMedia
 HOST-SUFFIX,maxgo.com,GlobalMedia
 HOST-SUFFIX,media-amazon.com,GlobalMedia
 HOST-SUFFIX,meridian.net,GlobalMedia
@@ -843,6 +843,7 @@ HOST-SUFFIX,olevod.com,GlobalMedia
 HOST-SUFFIX,olevod.io,GlobalMedia
 HOST-SUFFIX,olevod.tv,GlobalMedia
 HOST-SUFFIX,olevodtv.com,GlobalMedia
+HOST-SUFFIX,onetrust.com,GlobalMedia
 HOST-SUFFIX,originalhulu.com,GlobalMedia
 HOST-SUFFIX,orlandohurricane.com,GlobalMedia
 HOST-SUFFIX,overcast.fm,GlobalMedia
@@ -924,7 +925,7 @@ HOST-SUFFIX,s.yimg.jp,GlobalMedia
 HOST-SUFFIX,sbnation.com,GlobalMedia
 HOST-SUFFIX,scdn.co,GlobalMedia
 HOST-SUFFIX,screens-lab.jp,GlobalMedia
-HOST-SUFFIX,sentry.io,GlobalMedia
+HOST-SUFFIX,seattlespheres.com,GlobalMedia
 HOST-SUFFIX,sgpstatp.com,GlobalMedia
 HOST-SUFFIX,shopdisney.com,GlobalMedia
 HOST-SUFFIX,shops-disney.com,GlobalMedia
@@ -996,7 +997,6 @@ HOST-SUFFIX,tvb.com,GlobalMedia
 HOST-SUFFIX,tvb.com.au,GlobalMedia
 HOST-SUFFIX,tvbanywhere.com,GlobalMedia
 HOST-SUFFIX,tvbanywhere.com.sg,GlobalMedia
-HOST-SUFFIX,tvbc.com.cn,GlobalMedia
 HOST-SUFFIX,tvbeventpower.com.hk,GlobalMedia
 HOST-SUFFIX,tvbusa.com,GlobalMedia
 HOST-SUFFIX,tvbweekly.com,GlobalMedia

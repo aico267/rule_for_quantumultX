@@ -4,7 +4,7 @@
  * @Author zqzess
  * @Date 2023/05/04 13:34
  * @File myjs/PriceMonitor.js
- * @Version :
+ * @Version : v1.0
  * @Desc : switch价格监控，目前只支持日区，点击通知可以跳转查看详情
  * @GitHUb Https://github.com/zqzess
  * @Thanks 感谢@chavyleung提供的Env
@@ -44,7 +44,7 @@ async function CheckPrice(item){
                 const discount_start_time = i.discount_price.start_datetime // 折扣开始时间
                 const discount_end_time = i.discount_price.end_datetime // 折扣结束时间
                 const gold_point = i.gold_point.basic_gift_gp // 黄金点数
-                const discount = (1-discount_price/regular_price) * 100 + '%OFF'
+                const discount = Math.round((1-discount_price/regular_price)* 100) + '%OFF'
                 // $.msg(title,tag.flag+name + '打折了！' + discount_price + tag.name,'日常价: ' + regular_price + tag.name + '   折扣: ' + discount +'\n开始时间：' + discount_start_time+'\n结束时间：' + discount_end_time,{'open-url': `https://store-jp.nintendo.com/list/software/${id}.html`})
                 $.msg(title,tag.flag+name + '打折了！' + discount_price + tag.name,'原价:' + regular_price + tag.name + '📉' + discount + '🪙返点:' + gold_point +'\n结束时间：' + discount_end_time+'\n开始时间：' + discount_start_time,{'open-url': `https://store-jp.nintendo.com/list/software/${id}.html`})
             }

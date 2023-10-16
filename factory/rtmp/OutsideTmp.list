@@ -41,6 +41,12 @@ HOST-SUFFIX,storage.msn.com,Outside
 HOST-SUFFIX,ai.com,Outside
 HOST-SUFFIX,openai.com,Outside
 
+HOST,chat.openai.com.cdn.cloudflare.net,Outside
+HOST,openaiapi-site.azureedge.net,Outside
+HOST,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,Outside
+HOST,openaicomproductionae4b.blob.core.windows.net,Outside
+HOST,production-openaicom-storage.azureedge.net,Outside
+
 USER-AGENT,PayPal*,Outside
 HOST-KEYWORD,paypal,Outside
 HOST-SUFFIX,paypal.com,Outside
@@ -221,6 +227,7 @@ HOST-SUFFIX,chromestatus.com,Outside
 HOST-SUFFIX,chromium.org,Outside
 HOST-SUFFIX,cl.ly,Outside
 HOST-SUFFIX,clien.net,Outside
+HOST-SUFFIX,cloud.cupronickel.goog,Outside
 HOST-SUFFIX,cloudflare.com,Outside
 HOST-SUFFIX,cloudfront.net,Outside
 HOST-SUFFIX,cloudgarage.jp,Outside
@@ -250,6 +257,7 @@ HOST-SUFFIX,disconnect.me,Outside
 HOST-SUFFIX,disq.us,Outside
 HOST-SUFFIX,disqus.com,Outside
 HOST-SUFFIX,disquscdn.com,Outside
+HOST-SUFFIX,dler.io,Outside
 HOST-SUFFIX,dmm.co.jp,Outside
 HOST-SUFFIX,dnsimple.com,Outside
 HOST-SUFFIX,docker.com,Outside
@@ -566,6 +574,7 @@ HOST-SUFFIX,togetter.com,Outside
 HOST-SUFFIX,tokyocn.com,Outside
 HOST-SUFFIX,tomshardware.com,Outside
 HOST-SUFFIX,torcn.com,Outside
+HOST-SUFFIX,torrentmac.net,Outside
 HOST-SUFFIX,torrentprivacy.com,Outside
 HOST-SUFFIX,torrentproject.se,Outside
 HOST-SUFFIX,torrentz.eu,Outside
@@ -703,9 +712,7 @@ HOST-SUFFIX,ying.com,Outside
 HOST-SUFFIX,yorkbbs.ca,Outside
 HOST-SUFFIX,youmaker.com,Outside
 HOST-SUFFIX,yourlisten.com,Outside
-HOST-SUFFIX,youtu.be,Outside
 HOST-SUFFIX,yoyo.org,Outside
-HOST-SUFFIX,ytimg.com,Outside
 HOST-SUFFIX,zacebook.com,Outside
 HOST-SUFFIX,zalmos.com,Outside
 HOST-SUFFIX,zaobao.com.sg,Outside
@@ -851,10 +858,16 @@ HOST,api.waqi.info,Outside
 HOST,aqi.aqicn.org,Outside
 HOST,assets-priconne-redive-us.akamaized.net,Outside
 HOST,cdp.cloud.unity3d.com,Outside
+HOST,chat.openai.com.cdn.cloudflare.net,Outside
+HOST,cloud.oracle.com,Outside
 HOST,cvws.icloud-content.com,Outside
 HOST,developer.apple.com,Outside
 HOST,lens.l.google.com,Outside
+HOST,openaiapi-site.azureedge.net,Outside
+HOST,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,Outside
+HOST,openaicomproductionae4b.blob.core.windows.net,Outside
 HOST,p16-tiktokcdn-com.akamaized.net,Outside
+HOST,production-openaicom-storage.azureedge.net,Outside
 HOST,services.googleapis.cn,Outside
 HOST,testflight.apple.com,Outside
 HOST,voice.telephony.goog,Outside
@@ -874,14 +887,11 @@ HOST-SUFFIX,12vpn.com,Outside
 HOST-SUFFIX,12vpn.net,Outside
 HOST-SUFFIX,1337x.to,Outside
 HOST-SUFFIX,138.com,Outside
-HOST-SUFFIX,14.102.250.18,Outside
-HOST-SUFFIX,14.102.250.19,Outside
 HOST-SUFFIX,141hongkong.com,Outside
 HOST-SUFFIX,141jj.com,Outside
 HOST-SUFFIX,141tube.com,Outside
 HOST-SUFFIX,1688.com.au,Outside
 HOST-SUFFIX,173ng.com,Outside
-HOST-SUFFIX,174.142.105.153,Outside
 HOST-SUFFIX,177pic.info,Outside
 HOST-SUFFIX,17t17p.com,Outside
 HOST-SUFFIX,18board.com,Outside
@@ -962,17 +972,12 @@ HOST-SUFFIX,64tianwang.com,Outside
 HOST-SUFFIX,64wiki.com,Outside
 HOST-SUFFIX,66.ca,Outside
 HOST-SUFFIX,666kb.com,Outside
-HOST-SUFFIX,67.220.91.15,Outside
-HOST-SUFFIX,67.220.91.18,Outside
-HOST-SUFFIX,67.220.91.23,Outside
-HOST-SUFFIX,69.65.19.160,Outside
 HOST-SUFFIX,6do.news,Outside
 HOST-SUFFIX,6park.com,Outside
 HOST-SUFFIX,6parkbbs.com,Outside
 HOST-SUFFIX,6parker.com,Outside
 HOST-SUFFIX,6parknews.com,Outside
 HOST-SUFFIX,7-zip.org,Outside
-HOST-SUFFIX,72.52.81.22,Outside
 HOST-SUFFIX,7capture.com,Outside
 HOST-SUFFIX,7cow.com,Outside
 HOST-SUFFIX,8-d.com,Outside
@@ -1064,7 +1069,6 @@ HOST-SUFFIX,agro.hk,Outside
 HOST-SUFFIX,ahcdn.com,Outside
 HOST-SUFFIX,ai-kan.net,Outside
 HOST-SUFFIX,ai-wen.net,Outside
-HOST-SUFFIX,ai.com,Outside
 HOST-SUFFIX,ai.google,Outside
 HOST-SUFFIX,aiph.net,Outside
 HOST-SUFFIX,airasia.com,Outside
@@ -1394,6 +1398,7 @@ HOST-SUFFIX,berlinerbericht.de,Outside
 HOST-SUFFIX,berlintwitterwall.com,Outside
 HOST-SUFFIX,berm.co.nz,Outside
 HOST-SUFFIX,bestforchina.org,Outside
+HOST-SUFFIX,bestgore.com,Outside
 HOST-SUFFIX,bestpornstardb.com,Outside
 HOST-SUFFIX,bestvpn.com,Outside
 HOST-SUFFIX,bestvpnanalysis.com,Outside
@@ -1908,6 +1913,7 @@ HOST-SUFFIX,civilhrfront.org,Outside
 HOST-SUFFIX,civiliangunner.com,Outside
 HOST-SUFFIX,civilmedia.tw,Outside
 HOST-SUFFIX,civisec.org,Outside
+HOST-SUFFIX,civitai.com,Outside
 HOST-SUFFIX,cjb.net,Outside
 HOST-SUFFIX,ck101.com,Outside
 HOST-SUFFIX,cl.ly,Outside
@@ -1925,6 +1931,7 @@ HOST-SUFFIX,clien.net,Outside
 HOST-SUFFIX,clinica-tibet.ru,Outside
 HOST-SUFFIX,clipfish.de,Outside
 HOST-SUFFIX,cloakpoint.com,Outside
+HOST-SUFFIX,cloud.cupronickel.goog,Outside
 HOST-SUFFIX,cloudcone.com,Outside
 HOST-SUFFIX,cloudflare-ipfs.com,Outside
 HOST-SUFFIX,cloudflare.com,Outside
@@ -2211,6 +2218,7 @@ HOST-SUFFIX,dizhuzhishang.com,Outside
 HOST-SUFFIX,djangosnippets.org,Outside
 HOST-SUFFIX,djorz.com,Outside
 HOST-SUFFIX,dl-laby.jp,Outside
+HOST-SUFFIX,dler.io,Outside
 HOST-SUFFIX,dlercloud.com,Outside
 HOST-SUFFIX,dlive.tv,Outside
 HOST-SUFFIX,dlsite.com,Outside
@@ -3284,6 +3292,7 @@ HOST-SUFFIX,greenpeace.org,Outside
 HOST-SUFFIX,greenreadings.com,Outside
 HOST-SUFFIX,greenvpn.net,Outside
 HOST-SUFFIX,greenvpn.org,Outside
+HOST-SUFFIX,grindr.com,Outside
 HOST-SUFFIX,grotty-monday.com,Outside
 HOST-SUFFIX,grow.google,Outside
 HOST-SUFFIX,gs-discuss.com,Outside
@@ -3683,6 +3692,7 @@ HOST-SUFFIX,imagezilla.net,Outside
 HOST-SUFFIX,imb.org,Outside
 HOST-SUFFIX,imdb.com,Outside
 HOST-SUFFIX,img.ly,Outside
+HOST-SUFFIX,imgasd.com,Outside
 HOST-SUFFIX,imgchili.net,Outside
 HOST-SUFFIX,imgmega.com,Outside
 HOST-SUFFIX,imgur.com,Outside
@@ -3780,7 +3790,6 @@ HOST-SUFFIX,isohunt.com,Outside
 HOST-SUFFIX,israbox.com,Outside
 HOST-SUFFIX,issuu.com,Outside
 HOST-SUFFIX,istars.co.nz,Outside
-HOST-SUFFIX,istarshine.com,Outside
 HOST-SUFFIX,istef.info,Outside
 HOST-SUFFIX,istiqlalhewer.com,Outside
 HOST-SUFFIX,istockphoto.com,Outside
@@ -4090,6 +4099,7 @@ HOST-SUFFIX,lflinkup.org,Outside
 HOST-SUFFIX,lfpcontent.com,Outside
 HOST-SUFFIX,lhakar.org,Outside
 HOST-SUFFIX,lhasocialwork.org,Outside
+HOST-SUFFIX,li.taipei,Outside
 HOST-SUFFIX,liangyou.net,Outside
 HOST-SUFFIX,liangzhichuanmei.com,Outside
 HOST-SUFFIX,lianyue.net,Outside
@@ -4428,6 +4438,7 @@ HOST-SUFFIX,monar.ch,Outside
 HOST-SUFFIX,mondex.org,Outside
 HOST-SUFFIX,money-link.com.tw,Outside
 HOST-SUFFIX,moneyhome.biz,Outside
+HOST-SUFFIX,monica.im,Outside
 HOST-SUFFIX,monitorchina.org,Outside
 HOST-SUFFIX,monitorware.com,Outside
 HOST-SUFFIX,monlamit.org,Outside
@@ -4855,7 +4866,6 @@ HOST-SUFFIX,ontrac.com,Outside
 HOST-SUFFIX,oopsforum.com,Outside
 HOST-SUFFIX,ooyala.com,Outside
 HOST-SUFFIX,open.com.hk,Outside
-HOST-SUFFIX,openai.com,Outside
 HOST-SUFFIX,openallweb.com,Outside
 HOST-SUFFIX,opendemocracy.net,Outside
 HOST-SUFFIX,opendn.xyz,Outside
@@ -4874,6 +4884,7 @@ HOST-SUFFIX,openwrt.org.cn,Outside
 HOST-SUFFIX,opera-mini.net,Outside
 HOST-SUFFIX,opera.com,Outside
 HOST-SUFFIX,opus-gaming.com,Outside
+HOST-SUFFIX,oraclecloud.com,Outside
 HOST-SUFFIX,orchidbbs.com,Outside
 HOST-SUFFIX,organcare.org.tw,Outside
 HOST-SUFFIX,organharvestinvestigation.net,Outside
@@ -4905,6 +4916,7 @@ HOST-SUFFIX,over-blog.com,Outside
 HOST-SUFFIX,overcast.fm,Outside
 HOST-SUFFIX,overdaily.org,Outside
 HOST-SUFFIX,overplay.net,Outside
+HOST-SUFFIX,oversea.istarshine.com,Outside
 HOST-SUFFIX,ovi.com,Outside
 HOST-SUFFIX,ovpn.com,Outside
 HOST-SUFFIX,ow.ly,Outside
@@ -4926,6 +4938,7 @@ HOST-SUFFIX,pacopacomama.com,Outside
 HOST-SUFFIX,paddle.com,Outside
 HOST-SUFFIX,paddleapi.com,Outside
 HOST-SUFFIX,padmanet.com,Outside
+HOST-SUFFIX,page.link,Outside
 HOST-SUFFIX,pages.dev,Outside
 HOST-SUFFIX,pagodabox.com,Outside
 HOST-SUFFIX,palacemoon.com,Outside
@@ -5080,7 +5093,6 @@ HOST-SUFFIX,pobieramy.top,Outside
 HOST-SUFFIX,podbean.com,Outside
 HOST-SUFFIX,podcast.co,Outside
 HOST-SUFFIX,podictionary.com,Outside
-HOST-SUFFIX,poe.com,Outside
 HOST-SUFFIX,pokemon.com,Outside
 HOST-SUFFIX,pokerstars.com,Outside
 HOST-SUFFIX,pokerstars.net,Outside
@@ -5610,6 +5622,7 @@ HOST-SUFFIX,sis001.com,Outside
 HOST-SUFFIX,sis001.us,Outside
 HOST-SUFFIX,site2unblock.com,Outside
 HOST-SUFFIX,site90.net,Outside
+HOST-SUFFIX,sitebro.tw,Outside
 HOST-SUFFIX,sitekreator.com,Outside
 HOST-SUFFIX,sitemaps.org,Outside
 HOST-SUFFIX,six-degrees.io,Outside
@@ -6211,6 +6224,7 @@ HOST-SUFFIX,torguard.net,Outside
 HOST-SUFFIX,torlock.com,Outside
 HOST-SUFFIX,torproject.org,Outside
 HOST-SUFFIX,torrentkitty.tv,Outside
+HOST-SUFFIX,torrentmac.net,Outside
 HOST-SUFFIX,torrentprivacy.com,Outside
 HOST-SUFFIX,torrentproject.se,Outside
 HOST-SUFFIX,torrenty.org,Outside
@@ -6943,6 +6957,7 @@ HOST-SUFFIX,xiaod.in,Outside
 HOST-SUFFIX,xiaohexie.com,Outside
 HOST-SUFFIX,xiaolan.me,Outside
 HOST-SUFFIX,xiaoma.org,Outside
+HOST-SUFFIX,xiaomi.eu,Outside
 HOST-SUFFIX,xiaxiaoqiang.net,Outside
 HOST-SUFFIX,xiezhua.com,Outside
 HOST-SUFFIX,xihua.es,Outside
@@ -7194,7 +7209,6 @@ HOST-KEYWORD,beetalk,Outside
 HOST-KEYWORD,blogspot,Outside
 HOST-KEYWORD,dlercloud,Outside
 HOST-KEYWORD,dropbox,Outside
-HOST-KEYWORD,duolingo,Outside
 HOST-KEYWORD,facebook,Outside
 HOST-KEYWORD,fbcdn,Outside
 HOST-KEYWORD,github,Outside
@@ -7209,7 +7223,6 @@ HOST-KEYWORD,sci-hub,Outside
 HOST-KEYWORD,skydrive,Outside
 HOST-KEYWORD,spotify,Outside
 HOST-KEYWORD,telegram,Outside
-HOST-KEYWORD,tesla,Outside
 HOST-KEYWORD,tiktok,Outside
 HOST-KEYWORD,ttvnw,Outside
 HOST-KEYWORD,twitter,Outside
@@ -7253,6 +7266,7 @@ IP-CIDR,129.134.0.0/17,Outside
 IP-CIDR,129.226.0.0/16,Outside
 IP-CIDR,13.32.0.0/15,Outside
 IP-CIDR,13.35.0.0/17,Outside
+IP-CIDR,14.102.250.18/31,Outside
 IP-CIDR,147.92.128.0/17,Outside
 IP-CIDR,149.154.160.0/20,Outside
 IP-CIDR,157.240.0.0/17,Outside
@@ -7263,6 +7277,7 @@ IP-CIDR,173.192.222.160/27,Outside
 IP-CIDR,173.192.231.32/27,Outside
 IP-CIDR,173.194.0.0/16,Outside
 IP-CIDR,173.252.64.0/18,Outside
+IP-CIDR,174.142.105.153/32,Outside
 IP-CIDR,174.37.0.0/16,Outside
 IP-CIDR,179.60.192.0/22,Outside
 IP-CIDR,18.184.0.0/15,Outside
@@ -7273,7 +7288,6 @@ IP-CIDR,180.163.150.162/32,Outside
 IP-CIDR,180.163.150.34/32,Outside
 IP-CIDR,180.163.151.162/32,Outside
 IP-CIDR,180.163.151.34/32,Outside
-IP-CIDR,183.131.48.0/20,Outside
 IP-CIDR,184.173.128.0/17,Outside
 IP-CIDR,185.60.216.0/22,Outside
 IP-CIDR,203.104.103.0/24,Outside
@@ -7306,8 +7320,13 @@ IP-CIDR,54.230.156.0/22,Outside
 IP-CIDR,54.242.0.0/15,Outside
 IP-CIDR,54.93.0.0/16,Outside
 IP-CIDR,66.220.144.0/20,Outside
+IP-CIDR,67.220.91.15/32,Outside
+IP-CIDR,67.220.91.18/32,Outside
+IP-CIDR,67.220.91.23/32,Outside
 IP-CIDR,69.171.224.0/19,Outside
 IP-CIDR,69.63.176.0/20,Outside
+IP-CIDR,69.65.19.160/32,Outside
+IP-CIDR,72.52.81.22/32,Outside
 IP-CIDR,74.119.76.0/22,Outside
 IP-CIDR,74.125.0.0/16,Outside
 IP-CIDR,74.86.0.0/16,Outside

@@ -12,4 +12,13 @@ payload:
   - DOMAIN-KEYWORD,paoche
   - DOMAIN,objects.githubusercontent.com
   - DOMAIN,access.mypikpak.com
-  - DOMAIN,www.bing.com
+  - DOMAIN,s.deepl.com
+  - DOMAIN,sentry.deepl.com
+  - DOMAIN,www.whitemoon.top
+  - DOMAIN-SUFFIX,openai.com
+  - DOMAIN-SUFFIX,vpsgo.com
+  - DOMAIN-SUFFIX, bing.com
+  - DOMAIN-SUFFIX, bing.net
+  - DOMAIN-SUFFIX, bingapis.com
+  - DOMAIN, i.12bz.net
+  - DOMAIN, inf.news

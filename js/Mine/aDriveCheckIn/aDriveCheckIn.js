@@ -20,9 +20,15 @@ let ADrivre = {
     refresh_token_body: '',
     headers: '',
     refresh_token: '',
-    isAutoGetReword: true
+    isAutoGetReword: 'true'
 }
 ADrivreInfo = $.getjson(keyName) || ADrivre
+$.isAutoGetReword = true
+if(ADrivreInfo.isAutoGetReword===undefined || ADrivreInfo.isAutoGetReword==='')
+    ADrivreInfo.isAutoGetReword = 'true'
+if(ADrivreInfo.isAutoGetReword === 'false')
+    $.isAutoGetReword = false
+console.log('自动领取开启：' + $.isAutoGetReword)
 const authUrl = 'https://auth.aliyundrive.com/v2/account/token'
 const checkInUrl = 'https://member.aliyundrive.com/v1/activity/sign_in_list'
 const rewordUrl = 'https://member.aliyundrive.com/v1/activity/sign_in_reward?_rx-s=mobile'
@@ -160,13 +166,12 @@ function signCheckin(authorization) {
             let signInLogs = body.result.signInLogs
             $.log('签到天数: ' + signInCount)
             let reward = ''
-            let index = 1;
-            signInLogs.forEach(function (i) {
-                if(index === signInLogs.length && !ADrivreInfo.isAutoGetReword)
+            if(signInCount > 22 && !$.isAutoGetReword)
                 {
                     $.log('已经月末了，请不要忘记领取前面未领取的奖励')
                     $.msg(title,'📅月末提醒','请不要忘记领取之前的奖励')
                 }
+            signInLogs.forEach(function (i) {
                 if (Number(i.day) === signInCount) {
                     if(i.isReward)
                     {
@@ -176,11 +181,11 @@ function signCheckin(authorization) {
                     {
                         reward = i.poster?.reason +'\n' + i.poster?.name
                         if(reward === 'undefined\nundefined') {
-                            if(ADrivreInfo.isAutoGetReword)
+                            if($.isAutoGetReword)
                             {
                                 reward = ''
                                 $.log('签到完成')
-                                if(!ADrivreInfo.isAutoGetReword)
+                                if(!$.isAutoGetReword)
                                     $.log('⚠自动领取奖励未开启')
                                 getReword(authorization,signInCount)
                             }else{
@@ -191,7 +196,6 @@ function signCheckin(authorization) {
 
                     }
                 }
-                index++
             })
             if (isReward && reward) {
                 $.msg(title, stitle, reward)
