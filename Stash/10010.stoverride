@@ -29,7 +29,7 @@ tiles:
 cron:
   script:
     - name: "联通余量(v4)"
-      cron: "* */1 * * *"
+      cron: "0 */1 * * *"
       timeout: 60
       # debug: true
 
