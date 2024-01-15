@@ -1,26 +1,24 @@
 # NAME: China
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2023-10-10 02:11:37
-# HOST: 19
+# UPDATED: 2024-01-09 02:15:47
+# HOST: 17
 # HOST-KEYWORD: 9
-# HOST-SUFFIX: 3669
+# HOST-SUFFIX: 3678
 # HOST-WILDCARD: 1
 # IP-CIDR: 17
 # IP6-CIDR: 4
 # USER-AGENT: 31
-# TOTAL: 3750
+# TOTAL: 3757
 HOST,analytics.strava.com,China
 HOST,blzddist1-a.akamaihd.net,China
 HOST,cdn.angruo.com,China
 HOST,cdp.cloud.unity3d.com,China
 HOST,client.amplifi.com,China
-HOST,dl.google.com,China
 HOST,download.jetbrains.com,China
 HOST,images-cn.ssl-images-amazon.com,China
 HOST,ip.istatmenus.app,China
 HOST,kc.kexinshe.com,China
-HOST,mtalk.google.com,China
 HOST,origin-a.akamaihd.ne,China
 HOST,origin-a.akamaihd.net,China
 HOST,outlook.office365.com,China
@@ -779,7 +777,6 @@ HOST-SUFFIX,chaoxing.com,China
 HOST-SUFFIX,chaoxingv.com,China
 HOST-SUFFIX,chashebao.com,China
 HOST-SUFFIX,chazhengla.com,China
-HOST-SUFFIX,chdbits.co,China
 HOST-SUFFIX,che168.com,China
 HOST-SUFFIX,checkzeit.com,China
 HOST-SUFFIX,cheng.xin,China
@@ -1320,6 +1317,8 @@ HOST-SUFFIX,fastapi.net,China
 HOST-SUFFIX,fastcdn.com,China
 HOST-SUFFIX,fbank.com,China
 HOST-SUFFIX,fdcyun.com,China
+HOST-SUFFIX,feidee.com,China
+HOST-SUFFIX,feidee.net,China
 HOST-SUFFIX,feihuo.com,China
 HOST-SUFFIX,feiliao.com,China
 HOST-SUFFIX,feimaoyun.com,China
@@ -1372,10 +1371,14 @@ HOST-SUFFIX,freshhema.com,China
 HOST-SUFFIX,frontjs.com,China
 HOST-SUFFIX,frontwize.com,China
 HOST-SUFFIX,fsfund.com,China
+HOST-SUFFIX,fspcdn.com,China
 HOST-SUFFIX,ftfund.com,China
 HOST-SUFFIX,fugetech.com,China
+HOST-SUFFIX,fun.tv,China
 HOST-SUFFIX,funcdn.com,China
 HOST-SUFFIX,funnycore.com,China
+HOST-SUFFIX,funshion.com,China
+HOST-SUFFIX,funshion.net,China
 HOST-SUFFIX,futu5.com,China
 HOST-SUFFIX,futunn.com,China
 HOST-SUFFIX,fuwai.com,China
@@ -1465,7 +1468,6 @@ HOST-SUFFIX,gongxiangcj.com,China
 HOST-SUFFIX,gongyi.xin,China
 HOST-SUFFIX,goodread.com,China
 HOST-SUFFIX,goofish.com,China
-HOST-SUFFIX,googletraveladservices.com,China
 HOST-SUFFIX,goosail.com,China
 HOST-SUFFIX,goproxy.io,China
 HOST-SUFFIX,goselling.com,China
@@ -1676,6 +1678,7 @@ HOST-SUFFIX,ialicdn.com,China
 HOST-SUFFIX,iask.com,China
 HOST-SUFFIX,ibaotu.com,China
 HOST-SUFFIX,ibcet.org,China
+HOST-SUFFIX,ibidian.com,China
 HOST-SUFFIX,ibuychem.com,China
 HOST-SUFFIX,ibytedapm.com,China
 HOST-SUFFIX,ica-alliance.org,China
@@ -2891,6 +2894,7 @@ HOST-SUFFIX,springtour.com,China
 HOST-SUFFIX,sq.cc,China
 HOST-SUFFIX,sqqnh.org,China
 HOST-SUFFIX,sseinfo.com,China
+HOST-SUFFIX,ssjlicai.com,China
 HOST-SUFFIX,sslawy.com,China
 HOST-SUFFIX,sslibrary.com,China
 HOST-SUFFIX,sspai.com,China
@@ -2905,6 +2909,7 @@ HOST-SUFFIX,stcn.com,China
 HOST-SUFFIX,steampp.net,China
 HOST-SUFFIX,stockstar.com,China
 HOST-SUFFIX,suanya.com,China
+HOST-SUFFIX,sui.com,China
 HOST-SUFFIX,sumkoo.com,China
 HOST-SUFFIX,sumkoo.net,China
 HOST-SUFFIX,sun0769.com,China
@@ -3304,6 +3309,7 @@ HOST-SUFFIX,weilaicaijing.com,China
 HOST-SUFFIX,weilaiyunxiao.com,China
 HOST-SUFFIX,weiphone.com,China
 HOST-SUFFIX,weiphone.net,China
+HOST-SUFFIX,weixinbridge.com,China
 HOST-SUFFIX,weixing.com,China
 HOST-SUFFIX,weiyangx.com,China
 HOST-SUFFIX,weiyun.com,China
@@ -3392,6 +3398,7 @@ HOST-SUFFIX,xfdown.com,China
 HOST-SUFFIX,xhaiwai.com,China
 HOST-SUFFIX,xhostfire.com,China
 HOST-SUFFIX,xhscdn.com,China
+HOST-SUFFIX,xhscdn.net,China
 HOST-SUFFIX,xiachufang.com,China
 HOST-SUFFIX,xiamenair.com,China
 HOST-SUFFIX,xiami.com,China
