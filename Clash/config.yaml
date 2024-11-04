@@ -1,22 +1,18 @@
-mixed-port: 7890
-redir-port: 7891
-tproxy-port: 1536
+# tproxy-port: 1536
+# allow-lan: true
+mode: rule
+log-level: error
 ipv6: false
-allow-lan: true
-unified-delay: false
+unified-delay: true
 tcp-concurrent: true
 external-controller: 127.0.0.1:9090
 external-ui: ui
 external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
-
-find-process-mode: always
-
 profile:
   store-selected: true
   store-fake-ip: true
-
 sniffer:
-  enable: false
+  enable: true
   sniff:
     HTTP:
       ports: [80, 8080-8880]
@@ -27,238 +23,215 @@ sniffer:
       ports: [443, 8443]
   skip-domain:
     - "Mijia Cloud"
-    - "+.push.apple.com"
-
 tun:
-  enable: false
+  enable: true
   stack: system
-  device: tun0
   dns-hijack:
     - "any:53"
     - "tcp://any:53"
   auto-route: true
-  auto-redirect: false
+  auto-redirect: true
   auto-detect-interface: true
-
+  strict-route: true
 dns:
   enable: true
-  ipv6: true
   respect-rules: true
+  ipv6: false
+  listen: 0.0.0.0:1053
   enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.0/15
   fake-ip-filter:
     - "*"
     - "+.lan"
     - "+.local"
-    - "+.market.xiaomi.com"
+  default-nameserver:
+    - "https://223.5.5.5/dns-query"
   nameserver:
-    - https://120.53.53.53/dns-query
-    - https://223.5.5.5/dns-query
+    - "https://dns.cloudflare.com/dns-query"
+    - "https://dns.google/dns-query"
   proxy-server-nameserver:
-    - https://120.53.53.53/dns-query
-    - https://223.5.5.5/dns-query
+    - "https://doh.pub/dns-query"
   nameserver-policy:
-    "geosite:cn,private":
-      - https://120.53.53.53/dns-query
-      - https://223.5.5.5/dns-query
-    "geosite:geolocation-!cn":
-      - "https://dns.cloudflare.com/dns-query"
-      - "https://dns.google/dns-query"
-#这里是订阅更新和延迟测试相关
-#可以更改 proxy 指定的出站
-p: &p {type: http, interval: 86400, proxy: DIRECT, header: {User-Agent: ["Clash.Meta/mihomo/Alpha/1.18.6"]}, health-check: {enable: true, url: https://cp.cloudflare.com, interval: 18000, lazy: true}}
-
-# url 里填写自己的订阅,名称不能重复
-proxy-providers:
-  provider1:
-    <<: *p
-    url: ""
-
-  provider2:
-    <<: *p
-    url: ""
-
+    "rule-set:ChinaMax,ChinaMax_Domain,Lan":
+      - "https://doh.pub/dns-query"
+      - "https://dns.alidns.com/dns-query"
+    "rule-set:AWAvenue_Ads,Advertising,Advertising_Domain":
+      - "rcode://success"
 proxies:
-  - name: "直连"
-    type: direct
-    udp: true
-
+- name: "dns-out"
+  type: dns
+proxy-providers:
+  大陆钉钉:
+    type: http
+    url: ""
+    interval: 86400
+    health-check:
+      enable: true
+      url: "https://connectivitycheck.platform.hicloud.com/generate_204"
+      interval: 3600
+      lazy: true
+  海外钉钉:
+    type: http
+    url: ""
+    interval: 86400
+    health-check:
+      enable: true
+      url: "https://www.google.com/generate_204"
+      interval: 3600
+      lazy: true
+  大陆云盘:
+    type: http
+    url: ""
+    interval: 86400
+    health-check:
+      enable: true
+      url: "https://connectivitycheck.platform.hicloud.com/generate_204"
+      interval: 3600
+      lazy: true
+  海外云盘:
+    type: http
+    url: ""
+    interval: 86400
+    health-check:
+      enable: true
+      url: "https://www.google.com/generate_204"
+      interval: 3600
+      lazy: true
 proxy-groups:
-  - name: 全部节点
+  - name: "大陆出站"
     type: select
-    include-all: true
-
-  - name: 默认
+    proxies:
+      - "大陆钉钉"
+      - "大陆云盘"
+      - "DIRECT"
+      - "PASS"
+  - name: "大陆钉钉"
+    type: fallback
+    url: "https://connectivitycheck.platform.hicloud.com/generate_204"
+    interval: 600
+    lazy: true
+    max-failed-times: 3
+    use:
+      - "大陆钉钉"
+  - name: "大陆云盘"
+    type: fallback
+    url: "https://connectivitycheck.platform.hicloud.com/generate_204"
+    interval: 600
+    lazy: true
+    max-failed-times: 3
+    use:
+      - "大陆云盘"
+  - name: "广告拦截"
     type: select
-    proxies: [自动选择,直连,香港,台湾,日本,新加坡,美国,其它地区,全部节点]
-
-  - name: Google
+    proxies:
+      - "REJECT"
+      - "PASS"
+  - name: "游戏分流"
     type: select
-    proxies: [默认,香港,台湾,日本,新加坡,美国,其它地区,全部节点,自动选择,直连]
-
-  - name: Telegram
+    proxies:
+      - "PASS"
+      - "DIRECT"
+  - name: "海外出站"
     type: select
-    proxies: [默认,香港,台湾,日本,新加坡,美国,其它地区,全部节点,自动选择,直连]
-
-  - name: Twitter
-    type: select
-    proxies: [默认,香港,台湾,日本,新加坡,美国,其它地区,全部节点,自动选择,直连]
-
-  - name: 哔哩哔哩
-    type: select
-    proxies: [默认,香港,台湾,日本,新加坡,美国,其它地区,全部节点,自动选择,直连]
-
-  - name: 巴哈姆特
-    type: select
-    proxies: [默认,香港,台湾,日本,新加坡,美国,其它地区,全部节点,自动选择,直连]
-
-  - name: YouTube
-    type: select
-    proxies: [默认,香港,台湾,日本,新加坡,美国,其它地区,全部节点,自动选择,直连]
-
-  - name: NETFLIX
-    type: select
-    proxies: [默认,香港,台湾,日本,新加坡,美国,其它地区,全部节点,自动选择,直连]
-
-  - name: Spotify
-    type: select
-    proxies:  [默认,香港,台湾,日本,新加坡,美国,其它地区,全部节点,自动选择,直连]
-
-  - name: Github
-    type: select
-    proxies:  [默认,香港,台湾,日本,新加坡,美国,其它地区,全部节点,自动选择,直连]
-
-  - name: 国内
-    type: select
-    proxies:  [直连,默认,香港,台湾,日本,新加坡,美国,其它地区,全部节点,自动选择]
-
-  - name: 其他
-    type: select
-    proxies:  [默认,香港,台湾,日本,新加坡,美国,其它地区,全部节点,自动选择,直连]
-
-  #分隔,下面是地区分组
-  - name: 香港
-    type: select
-    include-all: true
-    filter: "(?i)港|hk|hongkong|hong kong"
-
-  - name: 台湾
-    type: select
-    include-all: true
-    filter: "(?i)台|tw|taiwan"
-
-  - name: 日本
-    type: select
-    include-all: true
-    filter: "(?i)日|jp|japan"
-
-  - name: 美国
-    type: select
-    include-all: true
-    filter: "(?i)美|us|unitedstates|united states"
-
-  - name: 新加坡
-    type: select
-    include-all: true
-    filter: "(?i)(新|sg|singapore)"
-
-  - name: 其它地区
-    type: select
-    include-all: true
-    filter: "(?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|日|jp|japan|新|sg|singapore|美|us|unitedstates)).*"
-
-  - name: 自动选择
-    type: url-test
-    include-all: true
-    tolerance: 10
-
-rules:
-  - DOMAIN-SUFFIX,dns.weixin.qq.com.cn,默认
-  - DOMAIN-SUFFIX,weixin.qq.com,默认
-  - RULE-SET,private_ip,直连,no-resolve
-  - RULE-SET,github_domain,Github
-  - RUlE-SET,twitter_domain,Twitter
-  - RULE-SET,youtube_domain,YouTube
-  - RULE-SET,google_domain,Google
-  - RULE-SET,telegram_domain,Telegram
-  - RULE-SET,netflix_domain,NETFLIX
-  - RULE-SET,bilibili_domain,哔哩哔哩
-  - RULE-SET,bahamut_domain,巴哈姆特
-  - RULE-SET,spotify_domain,Spotify
-  - RULE-SET,cn_domain,国内
-  - RULE-SET,geolocation-!cn,其他
-
-  - RULE-SET,google_ip,Google
-  - RULE-SET,netflix_ip,NETFLIX
-  - RULE-SET,telegram_ip,Telegram
-  - RULE-SET,twitter_ip,Twitter
-  - RULE-SET,cn_ip,国内
-  - MATCH,其他
-
-rule-anchor:
-  ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
-  domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
+    proxies:
+      - "海外钉钉"
+      - "海外云盘"
+  - name: "海外钉钉"
+    type: fallback
+    url: "https://www.google.com/generate_204"
+    interval: 600
+    lazy: true
+    max-failed-times: 3
+    use:
+      - "海外钉钉"
+  - name: "海外云盘"
+    type: fallback
+    url: "https://www.google.com/generate_204"
+    interval: 600
+    lazy: true
+    max-failed-times: 3
+    use:
+      - "海外云盘"
 rule-providers:
-  private_domain:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"
-  cn_domain:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"
-  biliintl_domain:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/biliintl.mrs"
-  ehentai_domain:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ehentai.mrs"
-  github_domain:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"
-  twitter_domain:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/twitter.mrs"
-  youtube_domain:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"
-  google_domain:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"
-  telegram_domain:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"
-  netflix_domain:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"
-  bilibili_domain:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bilibili.mrs"
-  bahamut_domain:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bahamut.mrs"
-  spotify_domain:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.mrs"
-  pixiv_domain:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/pixiv.mrs"
-  geolocation-!cn:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"
-
-  private_ip:
-    <<: *ip
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.mrs"
-  cn_ip:
-    <<: *ip
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"
-  google_ip:
-    <<: *ip
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs"
-  netflix_ip:
-    <<: *ip
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs"
-  twitter_ip:
-    <<: *ip
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/twitter.mrs"
-  telegram_ip:
-    <<: *ip
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"
+  AWAvenue_Ads:
+    type: http
+    url: "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main//Filters/AWAvenue-Ads-Rule-Clash.yaml"
+    interval: 86400
+    proxy: 海外出站
+    behavior: domain
+    format: yaml
+  Advertising:
+    type: http
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising.yaml"
+    interval: 86400
+    proxy: 海外出站
+    behavior: classical
+    format: yaml
+  Advertising_Domain:
+    type: http
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_Domain.txt"
+    interval: 86400
+    proxy: 海外出站
+    behavior: domain
+    format: text
+  Google:
+    type: http
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml"
+    interval: 86400
+    proxy: 海外出站
+    behavior: classical
+    format: yaml
+  ChinaMax:
+    type: http
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax.yaml"
+    interval: 86400
+    proxy: 海外出站
+    behavior: classical
+    format: yaml
+  ChinaMax_Domain:
+    type: http
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Domain.txt"
+    interval: 86400
+    proxy: 海外出站
+    behavior: domain
+    format: text
+  ChinaMax_IP_No_IPv6:
+    type: http
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_IP_No_IPv6.txt"
+    interval: 86400
+    proxy: 海外出站
+    behavior: ipcidr
+    format: text
+  Lan:
+    type: http
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml"
+    interval: 86400
+    proxy: 海外出站
+    behavior: classical
+    format: yaml
+rules:
+  - DST-PORT,53,dns-out
+  - RULE-SET,AWAvenue_Ads,广告拦截
+  - RULE-SET,Advertising,广告拦截
+  - RULE-SET,Advertising_Domain,广告拦截
+  - AND,((NETWORK,UDP),(DST-PORT,3478)),REJECT-DROP
+  - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT-DROP
+  - DOMAIN,mcdn.bilivideo.cn,REJECT-DROP
+  - DOMAIN,tracker.biliapi.net,REJECT-DROP
+  - DOMAIN-REGEX,stun(.*)\.chat\.bilibili\.com,REJECT-DROP
+  - DOMAIN-REGEX,(.*)-p2p-(.*)\.chat\.bilibili\.com,REJECT-DROP
+  - DOMAIN-REGEX,(.*)\.v(.*)d\.szbdyd\.com,REJECT-DROP
+  - DOMAIN-REGEX,(.*)-live-tracker-(.*)\.chat\.bilibili\.com,REJECT-DROP
+  - IP-CIDR,203.107.1.0/24,REJECT-DROP
+  - RULE-SET,Google,海外出站
+  - DOMAIN,www.bing.com,海外出站
+  - AND,((PROCESS-NAME,com.tencent.tmgp.sgame),(NETWORK,UDP)),游戏分流
+  - AND,((PROCESS-NAME,com.tencent.tmgp.cod),(NETWORK,UDP)),游戏分流
+  - AND,((PROCESS-NAME,com.miHoYo.Yuanshen),(NETWORK,UDP)),游戏分流
+  - AND,((PROCESS-NAME,com.netease.l22),(NETWORK,UDP)),游戏分流
+  - RULE-SET,ChinaMax,大陆出站
+  - RULE-SET,ChinaMax_Domain,大陆出站
+  - RULE-SET,ChinaMax_IP_No_IPv6,大陆出站
+  - RULE-SET,Lan,DIRECT,no-resolve
+  - MATCH,海外出站
+  - MATCH,REJECT
