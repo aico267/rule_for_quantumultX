@@ -1,4 +1,4 @@
-# Apple rules refresh time: 2024-01-15 01:40:45
+# Apple rules refresh time: 2024-11-18 02:10:37
 
 HOST-KEYWORD,apple.com.akadns.net,Apple
 HOST-KEYWORD,icloud.com.akadns.net,Apple
@@ -40,7 +40,11 @@ HOST,adcdownload.apple.com,Apple
 HOST,adcdownload.apple.com.akadns.net,Apple
 HOST,amp-api-search-edge.apps.apple.com,Apple
 HOST,amp-api.apps.apple.com,Apple
+HOST,amp-api.media.apple.com,Apple
 HOST,api-edge.apps.apple.com,Apple
+HOST,api-p-ap-c.smoot.apple.com,Apple
+HOST,api-p-ap-d.smoot.apple.com,Apple
+HOST,api-p-ap-e.smoot.apple.com,Apple
 HOST,api.apps.apple.com,Apple
 HOST,api.smoot.apple.cn,Apple
 HOST,app-site-association.cdn-apple.com,Apple
@@ -89,6 +93,7 @@ HOST,client-api.itunes.apple.com,Apple
 HOST,clientflow.apple.com,Apple
 HOST,clientflow.apple.com.akadns.net,Apple
 HOST,cma.itunes.apple.com,Apple
+HOST,cn-smp-paymentservices.apple.com,Apple
 HOST,communities.apple.com,Apple
 HOST,configuration.apple.com,Apple
 HOST,configuration.apple.com.akadns.net,Apple
@@ -98,14 +103,19 @@ HOST,crl.apple.com,Apple
 HOST,cstat.apple.com,Apple
 HOST,cstat.cdn-apple.com,Apple
 HOST,dd-cdn.origin-apple.com.akadns.net,Apple
+HOST,dejavu.apple.com,Apple
 HOST,discussionschinese.apple.com,Apple
 HOST,download.developer.apple.com,Apple
 HOST,downloaddispatch.itunes.apple.com,Apple
 HOST,e16991.b.akamaiedge.net,Apple
+HOST,edge.apple,Apple
+HOST,experiments.apple.com,Apple
 HOST,fides-pol.apple.com,Apple
+HOST,gateway.icloud.com,Apple
 HOST,gs-loc-cn.apple.com,Apple
 HOST,gs-loc.apple.com,Apple
 HOST,gsp10-ssl-cn.ls.apple.com,Apple
+HOST,gsp12-cn.ls.apple.com,Apple
 HOST,gsp13-cn.ls.apple.com,Apple
 HOST,gsp4-cn.ls.apple.com,Apple
 HOST,gsp4-cn.ls.apple.com.edgekey.net,Apple
@@ -114,14 +124,17 @@ HOST,gsp5-cn.ls.apple.com,Apple
 HOST,gsp85-cn-ssl.ls.apple.com,Apple
 HOST,gspe11-2-cn-ssl.ls.apple.com,Apple
 HOST,gspe12-cn-ssl.ls.apple.com,Apple
+HOST,gspe19-2-cn-ssl.ls.apple.com,Apple
 HOST,gspe19-cn-ssl.ls.apple.com,Apple
 HOST,gspe19-cn.ls-apple.com.akadns.net,Apple
 HOST,gspe19-cn.ls.apple.com,Apple
 HOST,gspe21-ssl.ls.apple.com,Apple
 HOST,gspe21.ls.apple.com,Apple
 HOST,gspe35-ssl.ls.apple.com,Apple
+HOST,gspe79-cn-ssl.ls.apple.com,Apple
 HOST,gspe85-cn-ssl.ls.apple.com,Apple
 HOST,guzzoni-apple-com.v.aaplimg.com,Apple
+HOST,guzzoni.smoot.apple.com,Apple
 HOST,iadsdk.apple.com,Apple
 HOST,icloud-cdn.icloud.com.akadns.net,Apple
 HOST,icloud.cdn-apple.com,Apple
@@ -129,18 +142,21 @@ HOST,icons.axm-usercontent-apple.com,Apple
 HOST,images.apple.com,Apple
 HOST,images.apple.com.akadns.net,Apple
 HOST,images.apple.com.edgekey.net.globalredir.akadns.net,Apple
+HOST,init-kt.apple.com,Apple
 HOST,init-p01md-lb.push-apple.com.akadns.net,Apple
 HOST,init-p01md.apple.com,Apple
 HOST,init-p01st-lb.push-apple.com.akadns.net,Apple
 HOST,init-p01st.push.apple.com,Apple
 HOST,init-s01st-lb.push-apple.com.akadns.net,Apple
 HOST,init-s01st.push.apple.com,Apple
+HOST,init.ess.apple.com,Apple
 HOST,init.itunes.apple.com,Apple
 HOST,iosapps-ssl.itunes.apple.com,Apple
 HOST,iosapps.itunes.apple.com,Apple
 HOST,iosapps.itunes.g.aaplimg.com,Apple
 HOST,ipcdn.apple.com,Apple
 HOST,iphone-ld.apple.com,Apple
+HOST,iphone-ld.origin-apple.com.akadns.net,Apple
 HOST,is1-ssl.mzstatic.com,Apple
 HOST,is1.mzstatic.com,Apple
 HOST,is2-ssl.mzstatic.com,Apple
@@ -160,6 +176,7 @@ HOST,maps.apple.com,Apple
 HOST,mesu-cdn.apple.com.akadns.net,Apple
 HOST,mesu-china.apple.com.akadns.net,Apple
 HOST,mesu.apple.com,Apple
+HOST,ml.cdn-apple.com,Apple
 HOST,music.apple.com,Apple
 HOST,ocsp-lb.apple.com.akadns.net,Apple
 HOST,ocsp.apple.com,Apple
@@ -168,12 +185,15 @@ HOST,ocsp2.apple.com,Apple
 HOST,oscdn.apple.com,Apple
 HOST,oscdn.origin-apple.com.akadns.net,Apple
 HOST,osxapps.itunes.apple.com,Apple
+HOST,osxapps.itunes.g.aaplimg.com,Apple
 HOST,p-events-delivery.akamaized.net,Apple
 HOST,pancake.apple.com,Apple
 HOST,pancake.cdn-apple.com.akadns.net,Apple
+HOST,pba0.apple.com,Apple
 HOST,pd.itunes.apple.com,Apple
 HOST,play.itunes.apple.com,Apple
 HOST,ppq.apple.com,Apple
+HOST,probe.siri.apple.com,Apple
 HOST,prod-support.apple-support.akadns.net,Apple
 HOST,publicassets.cdn-apple.com,Apple
 HOST,push-apple.com.akadns.net,Apple
@@ -183,9 +203,16 @@ HOST,se-edge.itunes.apple.com,Apple
 HOST,se.itunes.apple.com,Apple
 HOST,se2.itunes.apple.com,Apple
 HOST,search.itunes.apple.com,Apple
+HOST,seed-sequoia.siri.apple.com,Apple
+HOST,seed-swallow.siri.apple.com,Apple
+HOST,seed.siri.apple.com,Apple
+HOST,sequoia.apple.com,Apple
 HOST,sf-api-token-service.itunes.apple.com,Apple
+HOST,sh-pod2-smp-device.apple.com,Apple
+HOST,shazam-insights.cdn-apple.com,Apple
 HOST,smp-device-content.apple.com,Apple
 HOST,sp.itunes.apple.com,Apple
+HOST,static.gc.apple.com,Apple
 HOST,stocks-sparkline-lb.apple.com.akadns.net,Apple
 HOST,stocks-sparkline.apple.com,Apple
 HOST,store.apple.com,Apple
@@ -197,6 +224,7 @@ HOST,su.itunes.apple.com,Apple
 HOST,support-china.apple-support.akadns.net,Apple
 HOST,support.apple.com,Apple
 HOST,supportdownload.apple.com,Apple
+HOST,swallow-apple-com.v.aaplimg.com,Apple
 HOST,swallow.apple.com,Apple
 HOST,swcatalog-cdn.apple.com.akadns.net,Apple
 HOST,swcatalog.apple.com,Apple
@@ -206,7 +234,9 @@ HOST,swdist.apple.com,Apple
 HOST,swdist.apple.com.akadns.net,Apple
 HOST,swscan-cdn.apple.com.akadns.net,Apple
 HOST,swscan.apple.com,Apple
+HOST,sylvan.apple.com,Apple
 HOST,sync.itunes.apple.com,Apple
+HOST,tj-pod1-smp-device.apple.com,Apple
 HOST,updates-http.cdn-apple.com,Apple
 HOST,updates-http.cdn-apple.com.akadns.net,Apple
 HOST,updates.cdn-apple.com,Apple
@@ -214,6 +244,10 @@ HOST,upp.itunes.apple.com,Apple
 HOST,valid.apple.com,Apple
 HOST,valid.origin-apple.com.akadns.net,Apple
 HOST,weather-data.apple.com,Apple
+HOST,weather-data.apple.com.akadns.net,Apple
+HOST,weather-map.apple.com,Apple
+HOST,weather-map2.apple.com,Apple
+HOST,weatherkit.apple.com,Apple
 HOST,www.apple.com,Apple
 HOST,www.apple.com.edgekey.net,Apple
 HOST,www.apple.com.edgekey.net.globalredir.akadns.net,Apple
@@ -224,7 +258,6 @@ HOST,audio-ssl.itunes.apple.com,Apple
 HOST,audio.itunes.apple.com,Apple
 HOST,mvod.itunes.apple.com,Apple
 HOST,streamingaudio.itunes.apple.com,Apple
-HOST,gateway.icloud.com,Apple
 HOST,news-client-search.apple.com,Apple
 HOST,api-glb-sea.smoot.apple.com,Apple
 HOST,apple.comscoreresearch.com,Apple
@@ -236,7 +269,6 @@ HOST,devimages-cdn.apple.com,Apple
 HOST,devstreaming-cdn.apple.com,Apple
 HOST,docs-assets.developer.apple.com,Apple
 HOST,gspe1-ssl.ls.apple.com,Apple
-HOST,hls-svod.itunes.apple.com,Apple
 HOST,hls.itunes.apple.com,Apple
 HOST,itunes.apple.com,Apple
 HOST,js-cdn.music.apple.com,Apple
@@ -254,7 +286,6 @@ HOST,news-events.apple.com,Apple
 HOST,np-edge.itunes.apple.com,Apple
 HOST,play-edge.itunes.apple.com,Apple
 HOST,sandbox.itunes.apple.com,Apple
-HOST,testflight.apple.com,Apple
 HOST,tv.applemusic.com,Apple
 HOST,uts-api.itunes.apple.com,Apple
 HOST,hls-amt.itunes.apple.com,Apple
@@ -262,8 +293,10 @@ HOST,fmfmobile.icloud.com,Apple
 HOST,fmipmobile.icloud.com,Apple
 HOST,statici.icloud.com,Apple
 HOST,amp-api.fitness.apple.com,Apple
+HOST,hls-svod.itunes.apple.com,Apple
 HOST,guzzoni.apple.com,Apple
 HOST,beta.apple.com,Apple
+HOST,testflight.apple.com,Apple
 HOST,www-cdn.icloud.com.akadns.net,Apple
 HOST-SUFFIX,100beatscheap.com,Apple
 HOST-SUFFIX,1monsterbeatsbydreus.com,Apple
@@ -1059,7 +1092,6 @@ HOST-SUFFIX,ibeatsbydre.cc,Apple
 HOST-SUFFIX,ibeatsbydre.com,Apple
 HOST-SUFFIX,ichat.co.in,Apple
 HOST-SUFFIX,icloud-content.com.cn,Apple
-HOST-SUFFIX,icloud-sandbox.com,Apple
 HOST-SUFFIX,idvd.eu,Apple
 HOST-SUFFIX,igoshopping.net,Apple
 HOST-SUFFIX,ikids.com,Apple
@@ -1756,6 +1788,7 @@ HOST-SUFFIX,appleicloud.cn,Apple
 HOST-SUFFIX,applemx-icloud.com,Apple
 HOST-SUFFIX,icloud-apple.cn,Apple
 HOST-SUFFIX,icloud-isupport.com,Apple
+HOST-SUFFIX,icloud-sandbox.com,Apple
 HOST-SUFFIX,icloud.ch,Apple
 HOST-SUFFIX,icloud.com.cn,Apple
 HOST-SUFFIX,icloud.de,Apple
@@ -1802,9 +1835,16 @@ HOST-WILDCARD,apple.*,Apple
 HOST-WILDCARD,apple.com.*,Apple
 HOST-WILDCARD,appleworldwidedeveloper.*.net,Apple
 HOST-WILDCARD,imac.*,Apple
+HOST-WILDCARD,init*.push-apple.com.akadns.net,Apple
+HOST-WILDCARD,init*.push.apple.com,Apple
+HOST-WILDCARD,ipad.*,Apple
+HOST-WILDCARD,ipadair.*,Apple
+HOST-WILDCARD,ipadmini.*,Apple
 HOST-WILDCARD,iphone.*,Apple
 HOST-WILDCARD,ipod.*,Apple
 HOST-WILDCARD,macbook.*,Apple
+HOST-WILDCARD,macbookair.*,Apple
+HOST-WILDCARD,macbookpro.*,Apple
 HOST-KEYWORD,apple-support.akadns.net,Apple
 HOST-KEYWORD,apple.com.edgekey.net,Apple
 HOST-KEYWORD,buy.itunes.apple.com,Apple

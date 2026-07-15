@@ -86,21 +86,12 @@ HOST-SUFFIX,dc1live2lindazn.akamaized.net,GMedia
 HOST-SUFFIX,dc1-lm-live2dazn.secure.footprint.net,GMedia
 
 USER-AGENT,Disney*,GMedia
-HOST-SUFFIX,adobedtm.com,GMedia
-HOST-SUFFIX,bam.nr-date.net,GMedia
-HOST-SUFFIX,bamgrid.com,GMedia
-HOST-SUFFIX,braze.com,GMedia
-HOST-SUFFIX,cdn.optimizely.com,GMedia
-HOST-SUFFIX,d9.flashtalking.com,GMedia
-HOST-SUFFIX,disney.demdex.net,GMedia
-HOST-SUFFIX,disney.my.sentry.io,GMedia
-HOST-SUFFIX,disneyplus.bn5x.net,GMedia
 HOST-SUFFIX,disneyplus.com,GMedia
-HOST-SUFFIX,disneyplus.com.ssl.sc.omtrdc.net,GMedia
-HOST-SUFFIX,disney-plus.net,GMedia
-HOST-SUFFIX,disney-portal.my.onetrust.com,GMedia
-HOST-SUFFIX,dssott.com,GMedia
-HOST-SUFFIX,registerdisney.go.com,GMedia
+HOST-SUFFIX,disney.api.edge.bamgrid.com,GMedia
+HOST-SUFFIX,disney.content.edge.bamgrid.com,GMedia
+HOST-SUFFIX,prod-static.disney-plus.net,GMedia
+HOST-SUFFIX,disney.content.edge.bamgrid.com,GMedia
+HOST-SUFFIX,prod-static.disney-plus.net,GMedia
 
 USER-AGENT,encoreTVB*,GMedia
 HOST-SUFFIX,encoretvb.com,GMedia
@@ -208,41 +199,19 @@ HOST-SUFFIX,mytvsuper.com,GMedia
 HOST-SUFFIX,tvb.com,GMedia
 
 HOST-WILDCARD,netflixdnstest*.com,GMedia
-HOST-SUFFIX,flxvpn.net,GMedia
+HOST-SUFFIX,fast.com,GMedia
 HOST-SUFFIX,netflix.ca,GMedia
 HOST-SUFFIX,netflix.com,GMedia
-HOST-SUFFIX,netflix.com.au,GMedia
-HOST-SUFFIX,netflixinvestor.com,GMedia
 HOST-SUFFIX,netflix.net,GMedia
-HOST-SUFFIX,netflixstudios.com,GMedia
+HOST-SUFFIX,netflixinvestor.com,GMedia
 HOST-SUFFIX,netflixtechblog.com,GMedia
 HOST-SUFFIX,nflxext.com,GMedia
 HOST-SUFFIX,nflximg.com,GMedia
 HOST-SUFFIX,nflximg.net,GMedia
+HOST-SUFFIX,nflxsearch.net,GMedia
 HOST-SUFFIX,nflxso.net,GMedia
 HOST-SUFFIX,nflxvideo.net,GMedia
-HOST,e13252.dscg.akamaiedge.net,GMedia
-HOST,h-netflix.online-metrix.net,GMedia
-HOST,netflix.com.edgesuite.net,GMedia
-HOST-SUFFIX,onetrust.com,GMedia
-HOST-SUFFIX,cookielaw.org,GMedia
-IP-CIDR,23.246.18.0/23,GMedia
-IP-CIDR,37.77.184.0/21,GMedia
-IP-CIDR,45.57.0.0/17,GMedia
-IP-CIDR,64.120.128.0/17,GMedia
-IP-CIDR,66.197.128.0/17,GMedia
-IP-CIDR,69.53.224.0/19,GMedia
-IP-CIDR,108.175.32.0/20,GMedia
-IP-CIDR,185.2.220.0/22,GMedia
-IP-CIDR,185.9.188.0/22,GMedia
-IP-CIDR,192.173.64.0/18,GMedia
-IP-CIDR,198.38.96.0/19,GMedia
-IP-CIDR,198.45.48.0/20,GMedia
-IP-CIDR,208.75.76.0/22,GMedia
-IP6-CIDR,2607:fb10::/32,GMedia
-IP6-CIDR,2620:10c:7000::/44,GMedia
-IP6-CIDR,2a00:86c0::/32,GMedia
-IP6-CIDR,2a03:5640::/32,GMedia
+HOST-SUFFIX,netflix.com.edgesuite.net,GMedia
 
 HOST-SUFFIX,dmc.nico,GMedia
 HOST-SUFFIX,nicovideo.jp,GMedia
@@ -265,18 +234,11 @@ HOST-SUFFIX,soundcloud.com,GMedia
 HOST-SUFFIX,soundcloudmail.com,GMedia
 
 USER-AGENT,Spotify*,GMedia
+HOST-KEYWORD,spotify,GMedia
 HOST-SUFFIX,pscdn.co,GMedia
 HOST-SUFFIX,scdn.co,GMedia
 HOST-SUFFIX,spoti.fi,GMedia
-HOST-SUFFIX,spotify.com,GMedia
-HOST-SUFFIX,spotifycdn.com,GMedia
-HOST-SUFFIX,spotifycdn.net,GMedia
-HOST-SUFFIX,spotifycharts.com,GMedia
-HOST-SUFFIX,spotifycodes.com,GMedia
-HOST-SUFFIX,spotifyjobs.com,GMedia
-HOST-SUFFIX,spotifynewsroom.jp,GMedia
 HOST-SUFFIX,spotilocal.com,GMedia
-HOST-SUFFIX,tospotify.com,GMedia
 
 USER-AGENT,ViuTV*,GMedia
 HOST-SUFFIX,bootstrapcdn.com,GMedia
@@ -320,7 +282,6 @@ HOST,api.okzy.tv,GMedia
 HOST,apm-misaka.biliapi.net,GMedia
 HOST,apple.comscoreresearch.com,GMedia
 HOST,bcbolt446c5271-a.akamaihd.net,GMedia
-HOST,cache.video.iqiyi.com,GMedia
 HOST,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv,GMedia
 HOST,cs428.wpc.edgecastcdn.net,GMedia
 HOST,dashasiafox.akamaized.netflix,GMedia
@@ -341,7 +302,6 @@ HOST,news-client.apple.com,GMedia
 HOST,news-edge.apple.com,GMedia
 HOST,news-events.apple.com,GMedia
 HOST,ocvideo.apple.com,GMedia
-HOST,p.bstarstatic.com,GMedia
 HOST,rpg.pic-imges.com,GMedia
 HOST,rthklive2-lh.akamaihd.net,GMedia
 HOST-SUFFIX,112263.com,GMedia
@@ -438,6 +398,7 @@ HOST-SUFFIX,bowenpress.com,GMedia
 HOST-SUFFIX,boxun.com,GMedia
 HOST-SUFFIX,bravotv.com,GMedia
 HOST-SUFFIX,braze.com,GMedia
+HOST-SUFFIX,bstarstatic.com,GMedia
 HOST-SUFFIX,bucketeer.jp,GMedia
 HOST-SUFFIX,byspotify.com,GMedia
 HOST-SUFFIX,byteoversea.com,GMedia
@@ -469,6 +430,7 @@ HOST-SUFFIX,cbssvideo.com,GMedia
 HOST-SUFFIX,cbstelevisioncity.com,GMedia
 HOST-SUFFIX,cdn.optimizely.com,GMedia
 HOST-SUFFIX,cf-images.ap-southeast-1.prod.boltdns.net,GMedia
+HOST-SUFFIX,challenges.cloudflare.com,GMedia
 HOST-SUFFIX,channel4.com,GMedia
 HOST-SUFFIX,channel5.com,GMedia
 HOST-SUFFIX,chocotv.com.tw,GMedia
@@ -962,6 +924,7 @@ HOST-SUFFIX,italkbb.com,GMedia
 HOST-SUFFIX,italkbbtv.com,GMedia
 HOST-SUFFIX,itv.com,GMedia
 HOST-SUFFIX,itvstatic.com,GMedia
+HOST-SUFFIX,iwara.tv,GMedia
 HOST-SUFFIX,japonx.com,GMedia
 HOST-SUFFIX,japonx.net,GMedia
 HOST-SUFFIX,japonx.tv,GMedia
@@ -1295,6 +1258,7 @@ HOST-SUFFIX,tidal.com,GMedia
 HOST-SUFFIX,tidalhifi.com,GMedia
 HOST-SUFFIX,tik-tokapi.com,GMedia
 HOST-SUFFIX,tiktok.com,GMedia
+HOST-SUFFIX,tiktok.us,GMedia
 HOST-SUFFIX,tiktokcdn.com,GMedia
 HOST-SUFFIX,tiktokv.com,GMedia
 HOST-SUFFIX,timestalks.com,GMedia
@@ -1606,7 +1570,6 @@ HOST-WILDCARD,youtubego.com.*,GMedia
 HOST-WILDCARD,youtube.*,GMedia
 HOST-WILDCARD,youtube.*.*,GMedia
 HOST-WILDCARD,youtube.com.*,GMedia
-HOST-KEYWORD,-spotify-,GMedia
 HOST-KEYWORD,abematv.akamaized.net,GMedia
 HOST-KEYWORD,apiproxy-device-prod-nlb-,GMedia
 HOST-KEYWORD,avoddashs,GMedia
@@ -1624,7 +1587,7 @@ HOST-KEYWORD,nivod,GMedia
 HOST-KEYWORD,nowtv100,GMedia
 HOST-KEYWORD,olevod,GMedia
 HOST-KEYWORD,rthklive,GMedia
-HOST-KEYWORD,spotify.com,GMedia
+HOST-KEYWORD,spotify,GMedia
 HOST-KEYWORD,tiktokcdn,GMedia
 HOST-KEYWORD,ttvnw,GMedia
 HOST-KEYWORD,tvbanywhere,GMedia
@@ -1644,12 +1607,15 @@ USER-AGENT,Deezer*,GMedia
 USER-AGENT,Disney*,GMedia
 USER-AGENT,Disney+*,GMedia
 USER-AGENT,FOX%20NOW*,GMedia
+USER-AGENT,FOXNOW*,GMedia
 USER-AGENT,FOXPlus*,GMedia
 USER-AGENT,HBO%20GO%20PROD%20HKG*,GMedia
 USER-AGENT,HBO%20GO%20PROD*,GMedia
 USER-AGENT,HBO%20NOW*,GMedia
 USER-AGENT,HBO*,GMedia
+USER-AGENT,HBOGOPRODHKG*,GMedia
 USER-AGENT,HBOMAX*,GMedia
+USER-AGENT,HBONOW*,GMedia
 USER-AGENT,HWTVMobile*,GMedia
 USER-AGENT,Himalaya*,GMedia
 USER-AGENT,Hulu*,GMedia
@@ -1659,9 +1625,11 @@ USER-AGENT,JOOX*,GMedia
 USER-AGENT,KKTV*,GMedia
 USER-AGENT,LINE%20TV*,GMedia
 USER-AGENT,LINE*,GMedia
+USER-AGENT,LINETV*,GMedia
 USER-AGENT,Max*,GMedia
 USER-AGENT,My5*,GMedia
 USER-AGENT,Naver%20TV*,GMedia
+USER-AGENT,NaverTV*,GMedia
 USER-AGENT,Niconico*,GMedia
 USER-AGENT,Overcast*,GMedia
 USER-AGENT,PBS*,GMedia
@@ -1669,6 +1637,7 @@ USER-AGENT,PPlus*,GMedia
 USER-AGENT,Pandora*,GMedia
 USER-AGENT,PeacockMobile*,GMedia
 USER-AGENT,Prime%20Video*,GMedia
+USER-AGENT,PrimeVideo*,GMedia
 USER-AGENT,SoundCloud*,GMedia
 USER-AGENT,Spotify*,GMedia
 USER-AGENT,TIDAL*,GMedia
@@ -1680,6 +1649,7 @@ USER-AGENT,Viu*,GMedia
 USER-AGENT,ViuTV*,GMedia
 USER-AGENT,WeMusic*,GMedia
 USER-AGENT,WeTV*,GMedia
+USER-AGENT,app/bstar*,GMedia
 USER-AGENT,com.apple.tv*,GMedia
 USER-AGENT,com.kktv*,GMedia
 USER-AGENT,com.kktv.ios.kktv*,GMedia
